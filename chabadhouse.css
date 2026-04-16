@@ -547,8 +547,9 @@ text-transform: none;
   text-align: center;
   display: flex;
   justify-content: space-between;
+      flex-wrap: wrap;
 }
-
+/*
 @media (max-width: 800px) {
   .ct-h-actions [class^="widget-"].chabad_updates .widget_content {
     display: block;
@@ -558,7 +559,7 @@ text-transform: none;
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item {
     margin: 0px;
   vertical-align: middle;
-  width: 26%;
+  width: 32%;
 }
 
 @media (max-width: 800px) {
@@ -568,7 +569,7 @@ text-transform: none;
     padding-bottom: 40px;
   }
 }
-
+*/
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .icon {
   display: block;
   transition: all 300ms;
@@ -586,14 +587,7 @@ text-transform: none;
   transition: 0.3s;
 }
 
-.ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .title {
-  font-size: 20px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  text-align: left;
-  font-family: "Spartan", sans-serif;
-}
+
 
 @media (max-width: 800px) {
   .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .title {
@@ -611,11 +605,14 @@ text-transform: none;
 }
 
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .synopsis {
-  font-size: 17px;
-  line-height: 130%;
-  text-align: left;
+  
+   text-align: left;
   max-width: 380px;
   margin: 0 auto;
+  font-size: 17px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.3px;
 }
 
 @media (max-width: 800px) {
@@ -627,12 +624,15 @@ text-transform: none;
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .separator {
   display: none;
 }
-
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .title {
-  color: #0F2E2F;
-  font-family: "Spartan", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
+    margin-bottom: 8px;
+  margin-top: 20px;
+  text-align: left;
+      color: var(--e-global-color-primary);
+  font-family: var(--heading-font-family), serif !important;
 }
+
 
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .title:hover {
   color: #1b5456;
