@@ -1,3 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* BRIGHT (default) */
+:root {
+    --e-global-color-text: #323232;
+    --e-global-color-primary: #094c55;
+    --e-global-color-accent: #eb7954;
+    --e-global-color-secondary: #77c2d6;
+    --e-global-color-889a682: #d4643f;
+    --heading-font-family: 'Libre Baskerville';
+    --paragraph-font-family: 'Figtree';
+}
+
+/* CORPORATE */
+body.theme-corporate {
+    --e-global-color-primary: #013d55;
+    --e-global-color-accent: #45A49C;
+    --e-global-color-secondary: #cbad53;
+    --e-global-color-889a682: #7EB1C4;
+    --heading-font-family: 'Poppins', sans-serif;
+    --paragraph-font-family: 'Figtree';
+}
+
+/* ELEGANT */
+body.theme-elegant {
+    --e-global-color-primary: #6c2523;
+    --e-global-color-accent: #C8894B;
+    --e-global-color-secondary: #dfd6c3;
+    --e-global-color-889a682: #D0904B;
+    --heading-font-family: 'Libre Baskerville', serif;
+    --paragraph-font-family: 'Figtree';
+}
+
+/* PLAYFUL */
+body.theme-playful {
+    --e-global-color-primary: #1D4181;
+    --e-global-color-accent: #FDBA07;
+    --e-global-color-secondary: #5BBEED;
+    --e-global-color-889a682: #F3B102;
+    --heading-font-family: 'Poppins', sans-serif;
+    --paragraph-font-family: 'Figtree';
+}
+
+/* SOFT */
+body.theme-soft {
+    --e-global-color-primary: #2B4756;
+    --e-global-color-accent: #ACCA84;
+    --e-global-color-secondary: #FFB79A;
+    --e-global-color-889a682: #BCD49B;
+    --heading-font-family: 'Libre Baskerville', serif;
+    --paragraph-font-family: 'Figtree';
+}
 
 /* ============================================
    THEME COLOR OVERRIDES
@@ -326,3 +378,24 @@ margin-top: 8px;
 margin-bottom: 7px;
 }
 
+.upcoming_events li {
+    border: 1px solid #f4eee2;
+ background: #FEFDFC !important;
+    padding: 18px 14px 14px 14px !important;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* fonts */
+
+.chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5, .header-title{
+    text-transform: none;
+letter-spacing: 0;
+}
+
+
+.hp-row, .hp-table>:nth-of-type(2n) {
+    padding: 100px 10px;
+    background: #f9f6f0;
+
+}
