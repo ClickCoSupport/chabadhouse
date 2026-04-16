@@ -449,7 +449,7 @@ letter-spacing: 0;
 }
 
 /* about section template 6 */
-.about-content .clearfix:after {
+.banner-updates .clearfix:after {
 content: none !important;
 }
 .banner-updates img {
@@ -521,6 +521,7 @@ text-transform: none;
 .ct-h-actions {
   padding-top: 20px;
   padding-bottom: 40px;
+      background: #f9f6f0;
 }
 
 @media (max-width: 800px) {
@@ -555,8 +556,7 @@ text-transform: none;
 }
 
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item {
-  display: inline-block;
-  margin: 0px;
+    margin: 0px;
   vertical-align: middle;
   width: 26%;
 }
@@ -659,4 +659,9 @@ text-transform: none;
 
 .ct-h-actions.three-icons a.readMore:after:hover {
   color: #184c4e;
+}
+
+.ct-h-actions .item {
+    display: flex;
+    flex-direction: row;
 }
