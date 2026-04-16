@@ -1,0 +1,328 @@
+
+/* ============================================
+   THEME COLOR OVERRIDES
+   Replaces hardcoded colors with custom vars
+   ============================================ */
+
+/* --e-global-color-primary (#FFB400 replacements) */
+.chabad_updates .widget_header.widget_header h5,
+[class*=widget-] .widget_header.widget_header h5, .header-title,
+#footer .footer_text .footer3 .footer-title,
+#footer .footer_text .footer3 b .footer-title,
+.article-header__title,
+.content_title_container .content_title,
+.content_title_container h1,
+.Content_Title,
+.co_body .content .Content_Title,
+.co_body .content .SCHeading_1,
+.co_body h1,
+.form-header-group h1,
+.secondary_navigation .header,
+#calendar_header .cal_secondary_header,
+#calendarPicker .header .active_date,
+#calendarPicker a,
+.list_view .list_info,
+.mobile .center_logo a span,
+.co_body .content .department_index li:before,
+.hp_content_wrapper .mini_slider .sectiontitle,
+.message .wrapper .widget_content .item .title,
+.message .wrapper .widget_content .item .title a,
+.message .wrapper .widget_content.message_format h6,
+.hp_content_wrapper .chabad_updates .item a.readMore,
+.feedback_form .blue,
+.feedback_form .blue a,
+#BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper .article-header .article-header__title,
+#BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) .article-header .breadcrumbs .breadcrumbs__crumb,
+#BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) .article-header .breadcrumbs .breadcrumbs__divider,
+.hp-table>:not(:first-child) .promo_slider .cycle-caption p big,
+.hp_content_wrapper .upcoming_events .widget_content>ul>li h6,
+.hp_content_wrapper .upcoming_events .widget_content>ul>li h6 a,
+.hp_content_wrapper .widget_content>ul>li h6,
+.hp_content_wrapper .widget_content>ul>li h6 a {
+    color: var(--e-global-color-primary);
+}
+
+.cal_header_buttons .cal_button .button,
+#calendar_header #CalendarViewContainer #AddCategoryFiltersButton,
+#calendarWrapper.gregorian #CivilCal,
+#calendarWrapper.jewish #JewishCal,
+#co_department_index .co_body .clearfix .small_header,
+#CalendarContentContainer .year_view .month .day_name td {
+    background-color: var(--e-global-color-primary);
+}
+
+#header_container .links .float_right+.float_left .topBarLink:last-child:after,
+#header_container .links .topBarLink:before {
+    color: var(--e-global-color-primary);
+}
+
+#header_container .links .cco_search_header #MainSearchForm {
+    border-color: var(--e-global-color-primary);
+}
+
+#header_container .links .subscribe_box .co_global_submit .button,
+.hp_subscribe .wrapper #formContainer fieldset input[type=submit],
+body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a,
+body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent a,
+.cco_body #tabContentMain .donate_link a,
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore,
+.banner .widget_content.index_format .item .readMore,
+.message .wrapper .widget_content .readMore,
+.hp_content_wrapper .readMore,
+.hp_content_wrapper .latest_photos .readMore span,
+.latest_photos .readMore span,
+[class^=widget-].parsha .readMore,
+.hp_content_wrapper .mini_slider .anythingControls .thumbNav li a,
+.mobile .promo_slider .cycle-controlNav .circle {
+    border-color: var(--e-global-color-primary);
+}
+
+.co_global_button.yellow .button,
+.banner .widget_content.index_format .item .readMore:hover,
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore:hover,
+.hp_subscribe .wrapper #formContainer fieldset input[type=submit]:hover,
+.hp_content_wrapper .readMore:hover,
+.hp_content_wrapper .latest_photos .readMore span:hover,
+.latest_photos .readMore span:hover,
+[class^=widget-].parsha .readMore:hover,
+.hp_content_wrapper .mini_slider .anythingControls .thumbNav li a.cur,
+.mobile .promo_slider .cycle-controlNav .circle.selected {
+    background-color: var(--e-global-color-primary);
+}
+
+
+
+/* --e-global-color-secondary (#317CB8 replacements) */
+#header.on-scroll #header_container .links:after,
+body.sites-article #header_container .links:after,
+#header.on-scroll #header_container .links .topBarLink,
+#header.on-scroll #header_container .links .topBarLink a,
+body.sites-article #header_container .links .topBarLink,
+body.sites-article #header_container .links .topBarLink a,
+#header.on-scroll #header_container .links .search-trigger-container .search-trigger,
+body.sites-article #header_container .links .search-trigger-container .search-trigger,
+#header_container .links #HeaderSubscribeContainer a,
+#header_container .links .subscribe_box .footer_box a,
+#header_container .links .top_bar_item.cco_topbar_item,
+.co_body h2,
+.co_body .content .Content_Large,
+.co_body .content .SCHeading_2,
+.form-header-group h2,
+.co_body h3,
+.co_body .content .SCHeading_3,
+.form-header-group h3,
+.child_title a,
+.co_index .item .title,
+.co_index .item .title a,
+.child-subtitle,
+.child-subtitle a,
+.co_body .article_navigation_text a,
+.co_body .small_header,
+.co_body .small_header a,
+.co_body .small_header_alt,
+.co_body .small_header_alt a,
+.co_body .small_header_light,
+.co_body .small_header_light a,
+.co_content_container .small_header,
+.comment-thread .reader-comment .comment-reply-link,
+.small-links__item--more a,
+.co_body .content .child_title,
+.co_body .content .child_title a,
+.co_body .content .department_index .header a,
+.co_body .content .lt_blue a,
+.lt_blue,
+.lt_blue a,
+.co_local_menu .item .item_sub.selected a,
+.hp_content_wrapper .chabad_updates .item a,
+.hp_content_wrapper .mini_slider .title,
+.hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .bold.large,
+.hp_content_wrapper [class*=widget-].candlelighting .parsha_content .bold.large,
+.hp_content_wrapper [class*=widget-].magazine .item .title,
+.hp_content_wrapper [class*=widget-].magazine .item .title a,
+.hp_content_wrapper [class^=widget-].parsha .widget_content .title span,
+.hp_content_wrapper .daily_quote .widget_content .subtitle,
+.hp_content_wrapper .accordion .widget_content .header.active,
+.hp_content_wrapper .tabs .widget_content .header.active,
+.co_body .rounded_box a,
+#co_ads_container .lt_blue,
+#co_ads_container .lt_blue a,
+#co_ads_container #MosadInformation .small_header,
+#BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper .article-header .breadcrumbs .breadcrumbs__crumb,
+#BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper .article-header .breadcrumbs .breadcrumbs__divider,
+.message .wrapper .widget_content .readMore,
+.hp_content_wrapper .readMore,
+.hp_content_wrapper .latest_photos .readMore span,
+.latest_photos .readMore span,
+[class^=widget-].parsha .readMore,
+.mobile .promo_slider .slide_wrapper .caption {
+    color: var(--e-global-color-secondary);
+}
+
+.co_global_button .button,
+.co_global_submit .button,
+.ribbon-wrapper .ribbon,
+#lightbox-wrapper #lightbox #details-panel,
+body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container,
+#CalendarContentContainer .year_view .month .month_header,
+.cs-f-social-icons a:hover,
+.mobile .menu .menu_button #MenuIcon span {
+    background-color: var(--e-global-color-secondary);
+}
+
+body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container,
+#header_container .links #HeaderSubscribeContainer,
+#header.on-scroll #header_container .links,
+body.sites-article #header_container .links,
+.site-nav-wrapper,
+.cal_header_buttons .co_toggle_buttons .item,
+.cal_header_buttons .co_toggle_buttons .item.selected {
+    border-color: var(--e-global-color-secondary);
+}
+
+body.cco_body #tabContentMain .co_menu_item.selected a.parent:after,
+#tabContentMain .co_menu_item.multi_level:before {
+    background-color: var(--e-global-color-secondary);
+}
+
+.hp-table>:not(:first-child) .promo_slider .cycle-directionNav a:before,
+.co_menu_item.multi_level .co_submenu_container a.item.hover span,
+.co_menu_item.multi_level .co_submenu_container a.item:hover span,
+.on-scroll .cs-mobile-menu-open,
+.not-homepage body .cs-mobile-menu-open,
+body:not(.home) .cs-mobile-menu-open,
+.mobile .menu .menu_button {
+    color: var(--e-global-color-secondary);
+}
+
+
+
+
+/* --e-global-color-accent (#54AFCB replacements) */
+#calendar .item .content #jewish_history .title:before,
+#calendar .item .content #laws_customs .title:before,
+#calendar .item .content #daily_study .title:before,
+#calendar .item .content #torah_portion .title:before,
+#calendar .item .content #zmanim .candlelighting.title:before,
+#calendar.day .candlelighting.title:before,
+#calendar.list .candlelighting.title:before,
+.dir_ltr #calendar .item .content #events .title:before {
+    color: var(--e-global-color-accent);
+}
+
+.co_body .date_navigation {
+    border-bottom-color: var(--e-global-color-accent);
+}
+
+.co_body .content .form-all .form-submit-button {
+    background-color: var(--e-global-color-accent);
+    border-radius: 4px;
+}
+.co_body .content .form-all .form-submit-button:focus, .co_body .content .form-all .form-submit-button:hover {
+background: var(  --e-global-color-889a682);
+}
+
+/* --e-global-color-text (#343333 / #333 replacements) */
+.co_body .content p,
+.cps-container h1,
+.cps-container h2,
+.cps-container p,
+html body.cco_body,
+html body.cco_body p {
+    color: var(--e-global-color-text);
+}
+
+
+/* font family overrides */
+.chabad_updates .widget_header.widget_header h5,
+[class*=widget-] .widget_header.widget_header h5,
+.header-title,
+.article-header__title,
+.content_title_container .content_title,
+.content_title_container h1,
+body #tabContentMain .co_menu_item span.parent,
+body #tabContentMain .co_menu_item span.parent a,
+body.cco_body #tabContentMain .co_menu_item span.parent,
+body.cco_body #tabContentMain .co_menu_item span.parent a,
+body.cco_body #tabContentMain .co_submenu_container .co_column a,
+.branding-search #header_branding .site_title,
+.co_body .content .Content_Title,
+.message .wrapper .widget_content .item .title,
+.message .wrapper .widget_content .item .title a,
+.message .wrapper .widget_content.message_format h6,
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption big {
+    font-family: var(--heading-font-family), serif;
+    text-transform: none;
+}
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption big {
+color: #f9f6f0;
+}
+.co_body .content p,
+.co_body .article-body li,
+html body.cco_body p,
+.banner .widget_content.index_format .item .title,
+.banner .widget_content.index_format .item .title a,
+.banner .widget_content.index_format .item .subtitle,
+.message .wrapper .widget_content .item .synopsis,
+.message .wrapper .widget_content.message_format div,
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption p, .co_body .content .form-all, .co_body .content p, .co_body h1, .co_body h1 a, .co_body h2, .co_body h2 a, .co_body h3, .co_body h3 a, .co_body h4, .co_body h4 a, .co_body h5, .co_body h5 a, .co_body h6, .co_body h6 a, .cps-container h1, .cps-container h2, .cps-container p, .form-all, a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, html body.cco_body, html body.cco_body p, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, pre, q, ruby, s, samp, section, small, strike, sub, summary, sup, table, tfoot, time, tt, u, ul, var, video, .message .wrapper .widget_content .readMore, body #tabContentMain .co_menu_item span.parent a, body.cco_body #tabContentMain .co_menu_item span.parent, body.cco_body #tabContentMain .co_menu_item span.parent a{
+    font-family: var(--paragraph-font-family), sans-serif;
+}
+
+body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item, body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body #header.on-scroll .cco_body #tabContentMain .donate_link, body #header.on-scroll body #tabContentMain .co_menu_item span.parent, body #header.on-scroll body #tabContentMain .co_menu_item span.parent a, body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent, body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent a, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent a, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent a, body #header.on-scroll body.cco_body #tabContentMain .co_submenu_container .co_column a, body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent,body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a, body.cco_body #header.on-scroll #tabContentMain .co_submenu_container .co_column a, body.cco_body #header.on-scroll #tabContentMain .donate_link, body.cco_body.sites-article #tabContentMain .co_menu_item span.parent, body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item, body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent, body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a, body.cco_body.sites-article #tabContentMain .co_submenu_container .co_column a, body.cco_body.sites-article #tabContentMain .donate_link, body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item, body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body.sites-article .cco_body #tabContentMain .donate_link, body.sites-article body #tabContentMain .co_menu_item span.parent, body.sites-article body #tabContentMain .co_menu_item span.parent a, body.sites-article body #tabContentMain .co_menu_item.hover span.parent, body.sites-article body #tabContentMain .co_menu_item.hover span.parent a, body.sites-article body.cco_body #tabContentMain .co_menu_item span.parent, body.sites-article body.cco_body #tabContentMain .co_menu_item span.parent a, body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent, body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent a, body.sites-article body.cco_body #tabContentMain .co_submenu_container .co_column a {
+color: var( --e-global-color-primary );
+}
+.message .wrapper .widget_content.message_format div, .icon .chabad_updates .widget_content .item .title, .icon .chabad_updates .widget_content .item .title a, .icon .widget_content .item .title, .icon .widget_content .item .title a {
+    color: #323232;
+}
+body>#header>.wrapper {
+    background: var(--e-global-color-primary);
+}
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent a, body.cco_body.sites-article #tabContentMain .co_menu_item span.parent a, body.cco_body.sites-article #tabContentMain .co_menu_item span.parent, #header.on-scroll .branding-search #header_branding .site_title,
+body.sites-article .branding-search #header_branding .site_title {
+color: #f9f6f0;
+
+}
+body #tabContentMain .co_menu_item span.parent a, body.cco_body #tabContentMain .co_menu_item span.parent, body.cco_body #tabContentMain .co_menu_item span.parent a {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.9em;
+    letter-spacing: 1.4px;
+}
+/* buttons */
+ .message .wrapper .widget_content .readMore, .cycle-caption a, .donate_link a, .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore, .hp_subscribe .wrapper #formContainer fieldset input[type=submit] {
+color: #f9f6f0 !important;
+border-radius: 4px;
+background: var( --e-global-color-accent ) !important;
+border: 1px solid var( --e-global-color-accent ) !important;
+font-family: var(--paragraph-font-family), sans-serif;
+}
+.message .wrapper .widget_content .readMore:hover {
+    background: var( --e-global-color-889a682);
+border-color:var(  --e-global-color-889a682);
+}
+
+/* hero */
+
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption {
+       top: 53%;
+}
+.hp-table .hp-row-first .promo_slider .slider .slides {
+       padding-top: 50%;
+}
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore {
+    font-size: 18px;
+margin-top: 8px;
+}
+
+/* nav */
+.branding-search {
+    margin-top: -19px;
+}
+
+
+/* homepage */
+.chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5 {
+margin-bottom: 7px;
+}
+
