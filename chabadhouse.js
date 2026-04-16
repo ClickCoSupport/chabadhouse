@@ -28,7 +28,18 @@ window.addEventListener("DOMContentLoaded", function () {
     bannerItem.appendChild(aboutContent);
   }
 
-var bodyElement = document.querySelector("body.home .hp-row-first a");
+  document.querySelectorAll(".ct-h-actions .item").forEach(function (item) {
+    var title = item.querySelector(".title");
+    var synopsis = item.querySelector(".synopsis");
+    if (!title && !synopsis) return;
+    var iconContent = document.createElement("div");
+    iconContent.className = "icon-content";
+    if (title) iconContent.appendChild(title);
+    if (synopsis) iconContent.appendChild(synopsis);
+    item.appendChild(iconContent);
+  });
+
+  var bodyElement = document.querySelector("body.home .hp-row-first a");
   if (bodyElement) {
     bodyElement.innerHTML = autoplayingVideo;
     bodyElement.appendChild(script1);
