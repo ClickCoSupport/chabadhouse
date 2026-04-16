@@ -399,3 +399,7 @@ letter-spacing: 0;
     background: #f9f6f0;
 
 }
+/* fix nav */
+.co_menu_container {
+       top: auto;
+}
