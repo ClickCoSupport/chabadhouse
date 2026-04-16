@@ -338,7 +338,7 @@ body #tabContentMain .co_menu_item span.parent a, body.cco_body #tabContentMain 
     letter-spacing: 1.4px;
 }
 /* buttons */
- .message .wrapper .widget_content .readMore, .cycle-caption a, .donate_link a, .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore, .hp_subscribe .wrapper #formContainer fieldset input[type=submit] {
+ .message .wrapper .widget_content .readMore, .cycle-caption a, .donate_link a, .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore, .hp_subscribe .wrapper #formContainer fieldset input[type=submit], .banner .widget_content.index_format .item .readMore, .message .wrapper .widget_content .readMore {
 color: #f9f6f0 !important;
 border-radius: 4px;
 background: var( --e-global-color-accent ) !important;
@@ -355,7 +355,8 @@ border-color:var(  --e-global-color-889a682);
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption big {
 color: #f9f6f0;
 font-size: 87px;
-margin-bottom: 12x;
+    margin-bottom: 14px;
+    font-weight: 400;
 }
 
 /* tablet */
@@ -382,7 +383,7 @@ margin-bottom: 12x;
 }
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore {
     font-size: 18px;
-margin-top: 8px;
+margin-top: 11px;
 }
 
 /* nav */
@@ -427,7 +428,37 @@ margin-bottom: 7px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
+/* ----about */
+.banner .widget_content.index_format .item {
+       background: none;
+    padding: 0;
+}
 
+.banner .widget_content.index_format .item .title, .banner .widget_content.index_format .item .title a {
+        color: var(--e-global-color-primary);
+    font-family: var(--heading-font-family), serif !important;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.banner .widget_content.index_format .item .subtitle {
+text-transform: none;
+    font-size: 18px;
+    line-height: 1.3em;
+}
+.banner .widget_content.index_format .item .icon img {
+       border-radius: 0;
+    border: none;
+}
+
+.banner .widget_content.index_format .item .icon {
+    position: relative;
+    top: auto;
+    transform: none;
+    left: auto;
+      float: none;
+}
 /* fonts */
 
 .chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5, .header-title{
