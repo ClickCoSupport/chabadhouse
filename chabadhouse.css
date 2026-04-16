@@ -538,8 +538,8 @@ text-transform: none;
     padding-bottom: 0;
   }
 }
-
-.ct-h-actions .wrapper {
+/* sectio widths */
+.ct-h-actions .wrapper, .banner .widget_content.index_format .item {
   width: 1080px;
   max-width: 90%;
   margin: 0 auto;
