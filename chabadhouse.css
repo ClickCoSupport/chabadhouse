@@ -417,6 +417,15 @@ body>#header>.wrapper {
     filter: none;
 }
 /* homepage */
+
+.hp_content_wrapper .g320:nth-child(2):after, .hp_content_wrapper .g320:nth-child(2):before{
+    content: none;
+}
+.candlelighting {
+    background: var(--e-global-color-primary) url('/media/images/1366/oVYc13661029.png') no-repeat center center / cover;
+border-radius: 13px;
+}
+
 .chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5 {
 margin-bottom: 7px;
 }
