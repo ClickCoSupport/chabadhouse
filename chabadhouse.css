@@ -549,6 +549,8 @@ text-transform: none;
   justify-content: space-between;
       flex-wrap: wrap;
 }
+
+
 /*
 @media (max-width: 800px) {
   .ct-h-actions [class^="widget-"].chabad_updates .widget_content {
@@ -556,11 +558,7 @@ text-transform: none;
   }
 }
 
-.ct-h-actions [class^="widget-"].chabad_updates .widget_content .item {
-    margin: 0px;
-  vertical-align: middle;
-  width: 32%;
-}
+
 
 @media (max-width: 800px) {
   .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item {
@@ -576,10 +574,14 @@ text-transform: none;
 }
 
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .icon img {
-  max-width: 60px;
-  width: 100%;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
   float: none;
-  padding-left: 2px;
+  padding: 20px;
+  background: var(--e-global-color-primary);
+  border-radius: 50%;
+  box-sizing: content-box;
 }
 
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .icon img:hover {
@@ -624,7 +626,7 @@ text-transform: none;
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .separator {
   display: none;
 }
-.ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .title {
+.ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .title, .ct-h-actions .item .title a {
   font-size: 20px;
     margin-bottom: 8px;
   margin-top: 20px;
@@ -664,4 +666,8 @@ text-transform: none;
 .ct-h-actions .item {
     display: flex;
     flex-direction: row;
+        margin: 0px;
+  vertical-align: middle;
+  width: 32%;
+  gap: 14px;
 }
