@@ -13,6 +13,12 @@ window.addEventListener("DOMContentLoaded", function () {
 
   var bannerItem = document.querySelector(".banner .widget_content.index_format .item");
   if (bannerItem) {
+    var iconDiv = bannerItem.querySelector(".icon");
+    var img = iconDiv ? iconDiv.querySelector("img") : null;
+    if (img) {
+      bannerItem.insertBefore(img, bannerItem.firstChild);
+      iconDiv.parentNode.removeChild(iconDiv);
+    }
     var aboutContent = document.createElement("div");
     aboutContent.className = "about-content";
     [".title", ".subtitle", ".synopsis", "a.readMore"].forEach(function (sel) {
