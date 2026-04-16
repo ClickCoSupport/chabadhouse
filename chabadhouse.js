@@ -11,6 +11,17 @@ window.addEventListener("DOMContentLoaded", function () {
   var script2 = document.createElement("script");
   script2.textContent = 'if (typeof ObjectFitVideos == "function") objectFitVideos()';
 
+  var bannerItem = document.querySelector(".banner .widget_content.index_format .item");
+  if (bannerItem) {
+    var aboutContent = document.createElement("div");
+    aboutContent.className = "about-content";
+    [".title", ".subtitle", ".synopsis", "a.readMore"].forEach(function (sel) {
+      var el = bannerItem.querySelector(sel);
+      if (el) aboutContent.appendChild(el);
+    });
+    bannerItem.appendChild(aboutContent);
+  }
+
   var bodyElement = document.querySelector("body.home .hp-row-first a");
   if (bodyElement) {
     bodyElement.innerHTML = autoplayingVideo;
