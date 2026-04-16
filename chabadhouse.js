@@ -22,6 +22,23 @@ window.addEventListener("DOMContentLoaded", function () {
     bannerItem.appendChild(aboutContent);
   }
 
+  document.querySelectorAll(".sneak_peek .widget_content").forEach(function (wc) {
+    var thumbnail = wc.querySelector("a.thumbnail");
+    var img = thumbnail ? thumbnail.querySelector("img") : null;
+    var h6 = wc.querySelector("h6");
+    var p = wc.querySelector("p");
+    if (!thumbnail || !img || !h6) return;
+
+    thumbnail.innerHTML = "";
+    var iconContent = document.createElement("div");
+    iconContent.className = "icon-content";
+    iconContent.appendChild(h6);
+    if (p) iconContent.appendChild(p);
+
+    wc.insertBefore(img, wc.firstChild);
+    wc.insertBefore(iconContent, thumbnail);
+  });
+
   var bodyElement = document.querySelector("body.home .hp-row-first a");
   if (bodyElement) {
     bodyElement.innerHTML = autoplayingVideo;
