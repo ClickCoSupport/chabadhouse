@@ -136,6 +136,13 @@ window.addEventListener("DOMContentLoaded", function () {
     li.appendChild(eventContentWrap);
   });
 
+  var photosContent = document.querySelector(".photos .widget_content");
+  var footer = document.querySelector("#footer");
+  var bottomPadding = footer ? footer.querySelector(".bottom_padding.clear_float") : null;
+  if (photosContent && bottomPadding) {
+    footer.insertBefore(photosContent, bottomPadding);
+  }
+
   jQuery(".departments .item").on("click", function () {
     var href = jQuery(this).find("a").attr("href");
     if (href) window.location.href = href;
