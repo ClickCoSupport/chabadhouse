@@ -121,8 +121,11 @@ window.addEventListener("DOMContentLoaded", function () {
     var eventContent = document.createElement("div");
     eventContent.className = "event-content";
     while (li.firstChild) eventContent.appendChild(li.firstChild);
+    var eventContentWrap = document.createElement("div");
+    eventContentWrap.className = "event-content-wrap";
+    eventContentWrap.appendChild(eventContent);
     li.appendChild(dateBox);
-    li.appendChild(eventContent);
+    li.appendChild(eventContentWrap);
   });
 
   jQuery(".departments .item").on("click", function () {

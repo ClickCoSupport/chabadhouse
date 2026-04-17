@@ -342,16 +342,22 @@ body #tabContentMain .co_menu_item span.parent a, body.cco_body #tabContentMain 
     letter-spacing: 1.4px;
 }
 /* buttons */
- .message .wrapper .widget_content .readMore, .cycle-caption a, .donate_link a, .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore, .hp_subscribe .wrapper #formContainer fieldset input[type=submit], .banner .widget_content.index_format .item .readMore, .message .wrapper .widget_content .readMore {
+ .message .wrapper .widget_content .readMore, .cycle-caption a, .donate_link a, .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore, .hp_subscribe .wrapper #formContainer fieldset input[type=submit], .banner .widget_content.index_format .item .readMore, .message .wrapper .widget_content .readMore, .event-content a:after {
 color: #f9f6f0 !important;
 border-radius: 4px;
 background: var( --e-global-color-accent ) !important;
 border: 1px solid var( --e-global-color-accent ) !important;
 font-family: var(--paragraph-font-family), sans-serif;
 }
-.message .wrapper .widget_content .readMore:hover {
-    background: var( --e-global-color-889a682);
-border-color:var(  --e-global-color-889a682);
+.message .wrapper .widget_content .readMore:hover,
+.cycle-caption a:hover,
+.donate_link a:hover,
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore:hover,
+.hp_subscribe .wrapper #formContainer fieldset input[type=submit]:hover,
+.banner .widget_content.index_format .item .readMore:hover,
+.event-content a:after:hover {
+    background: var(--e-global-color-889a682) !important;
+    border-color: var(--e-global-color-889a682) !important;
 }
 
 /* hero */
@@ -453,10 +459,14 @@ line-height: 100%;
 .candlelighting {
     background: var(--e-global-color-primary) url('https://clickcosupport.github.io/chabadhouse/CandleBackground.png') no-repeat center center / cover;
 border-radius: 13px;
-padding-bottom: 56px;
+    padding: 55px 0;
+}
+
+.hp_content_wrapper [class*=widget-].candlelighting .medium_left_margin{
+  color: #f4eee2;
 }
 .upcoming_events .wrapper {
-    margin-top: 33px;
+    margin-top: 63px;
 }
 .events-shabbat {
    
@@ -486,6 +496,20 @@ margin-bottom: 7px;
 }
 .event-content {
     text-align: left;
+}
+.event-content a:after {
+    content: "View Details";
+    position: relative;
+    display: block;
+    color: #f9f6f0 !important;
+   
+    max-width: fit-content;
+    padding: 6px 12px;
+    letter-spacing: 1px;
+    box-shadow: none;
+    transition: all .2s;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 .event-content small {
     font-weight: 600;
@@ -806,11 +830,24 @@ text-transform: none;
   
     font-size: 17px;
 }
+
+.hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content, .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .candlelighting_heading {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.candlelighting .widget_header {
+    display: none;
+}
 .candlelighting_heading .section_heading {
         font-size: 29px !important;
     font-weight: 500 !important;
     line-height: 1em;
     color: #f4eee2 !important;
+    align-items: center;
+    text-align: center;
+    max-width: 328px;
 }
 
 .candlelighting_heading .section_subheading, .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .when_to_light {
@@ -1051,6 +1088,8 @@ font-size: 45px;
     flex-direction: column;
     gap: 6px;
     width: 100%;
+    margin-top: 23px;
+        max-width: 300px;
 }
 .hp_subscribe h5 {
     font-size: 35px !important;
@@ -1061,6 +1100,7 @@ font-size: 45px;
 }
 .connect {
     width: 52%;
+    padding-top: 65px;
 }
 
 .connect .widget_header {
@@ -1079,17 +1119,19 @@ font-size: 45px;
    background: #f4eee2 !important;
    padding-bottom: 0 !important;
     margin-bottom: -50px;
+        padding-top: 80px !important;
 }
 .connect-section {
    gap: 30px;
     justify-content: space-between;
         display: flex;
         padding-top:30px;
-        align-items: center;
+        
 }
 .hp-row.hp_subscribe {
     background: #f9f6f0;
     z-index: 1;
+    padding: 60px 30px;
 }
 
 /* photos */
