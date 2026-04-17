@@ -73,7 +73,17 @@ window.addEventListener("DOMContentLoaded", function () {
   };
 
   if (jQuery(".testimonials").length) {
-    testimonialSlider.init();
+    var owlCSS = document.createElement("link");
+    owlCSS.rel = "stylesheet";
+    owlCSS.href = "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css";
+    document.head.appendChild(owlCSS);
+
+    var owlJS = document.createElement("script");
+    owlJS.src = "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js";
+    owlJS.onload = function () {
+      testimonialSlider.init();
+    };
+    document.head.appendChild(owlJS);
   }
 
   var bodyElement = document.querySelector("body.home .hp-row-first a");
