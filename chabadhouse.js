@@ -109,7 +109,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   var monthAbbr = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   document.querySelectorAll(".upcoming_events li").forEach(function (li) {
-    var small = li.querySelector(".small");
+    var small = li.querySelector("small");
     if (!small) return;
     var match = small.textContent.match(/(\w+)\s+(\d+),\s+\d{4}/);
     if (!match) return;
