@@ -569,8 +569,12 @@ text-transform: none;
       flex-wrap: wrap;
       height: auto !important;
 }
-
-
+.ct-h-actions .item:hover .icon {
+    background: var( --e-global-color-accent );
+}
+.ct-h-actions .item:hover .title a {
+    color:var( --e-global-color-accent );
+}
 /*
 @media (max-width: 800px) {
   .ct-h-actions [class^="widget-"].chabad_updates .widget_content {
@@ -588,10 +592,6 @@ text-transform: none;
   }
 }
 */
-.ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .icon {
-  display: block;
-  transition: all 300ms;
-}
 
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .icon img {
  width: 36px;
@@ -601,11 +601,17 @@ text-transform: none;
      margin: 0;
 }
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .icon {
- 
+   display: block;
+  transition: all 300ms;
      aspect-ratio: 1;
   background: var(--e-global-color-primary);
   border-radius: 50%;
   box-sizing: content-box;
+      width: 83px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .icon img:hover {
@@ -719,12 +725,12 @@ text-transform: none;
 /* candles */
 
 .candlelighting_heading .section_heading {
-        font-size: 29px;
-    font-weight: 500;
+        font-size: 29px !important;
+    font-weight: 500 !important;
     line-height: 1em;
-    color: #f4eee2;
+    color: #f4eee2 !important;
 }
 
 .candlelighting_heading .section_subheading {
-    color: #f4eee2;
+    color: #f4eee2 !important;
 }
