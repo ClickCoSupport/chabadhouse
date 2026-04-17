@@ -557,6 +557,7 @@ text-transform: none;
   display: flex;
   justify-content: space-between;
       flex-wrap: wrap;
+      height: auto !important;
 }
 
 
@@ -684,4 +685,8 @@ text-transform: none;
   vertical-align: middle;
   width: 32%;
   gap: 14px;
+}
+
+.departments .item::after {
+    display: none;
 }
