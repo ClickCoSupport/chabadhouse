@@ -342,7 +342,7 @@ body #tabContentMain .co_menu_item span.parent a, body.cco_body #tabContentMain 
     letter-spacing: 1.4px;
 }
 /* buttons */
- .message .wrapper .widget_content .readMore, .cycle-caption a, .donate_link a, .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore, .hp_subscribe .wrapper #formContainer fieldset input[type=submit], .banner .widget_content.index_format .item .readMore, .message .wrapper .widget_content .readMore, .event-content a:after {
+ .message .wrapper .widget_content .readMore, .cycle-caption a, .donate_link a, .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore, .hp_subscribe .wrapper #formContainer fieldset input[type=submit], .banner .widget_content.index_format .item .readMore, .message .wrapper .widget_content .readMore, .event-details-btn {
 color: #f9f6f0 !important;
 border-radius: 4px;
 background: var( --e-global-color-accent ) !important;
@@ -355,7 +355,7 @@ font-family: var(--paragraph-font-family), sans-serif;
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore:hover,
 .hp_subscribe .wrapper #formContainer fieldset input[type=submit]:hover,
 .banner .widget_content.index_format .item .readMore:hover,
-.event-content a:after:hover {
+.event-details-btn:hover {
     background: var(--e-global-color-889a682) !important;
     border-color: var(--e-global-color-889a682) !important;
 }
@@ -530,20 +530,7 @@ margin-bottom: 7px;
 .event-content {
     text-align: left;
 }
-.event-content a:after {
-    content: "View Details";
-    position: relative;
-    display: block;
-    color: #f9f6f0 !important;
-   
-    max-width: fit-content;
-    padding: 6px 12px;
-    letter-spacing: 1px;
-    box-shadow: none;
-    transition: all .2s;
-    font-size: 13px;
-    text-transform: uppercase;
-}
+
 .event-content small {
     font-weight: 600;
     letter-spacing: .3px;

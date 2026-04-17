@@ -107,6 +107,16 @@ window.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(owlJS);
   }
 
+  document.querySelectorAll(".event-content").forEach(function (el) {
+    var link = el.querySelector("a");
+    if (!link) return;
+    var btn = document.createElement("a");
+    btn.href = link.href;
+    btn.className = "event-details-btn";
+    btn.textContent = "View Details";
+    el.appendChild(btn);
+  });
+
   var monthAbbr = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   document.querySelectorAll(".upcoming_events li").forEach(function (li) {
     var small = li.querySelector("small");
