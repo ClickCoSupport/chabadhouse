@@ -438,10 +438,14 @@ body>#header>.wrapper {
 
 /* Shabbat & Events*/
 a.event-details-btn {
-    padding: 4px 9px;
+    padding: 6px 9px;
     text-transform: uppercase;
-    letter-spacing: .3px;
-    font-weight: 500;
+    letter-spacing: .4px;
+       display: flex;
+    align-items: center;
+    max-height: fit-content;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .hp_content_wrapper .readMore:hover {
@@ -460,7 +464,7 @@ a.event-details-btn {
    padding-right: 14px;
     margin-right: 5px;
 position: relative;
-    height: 52px;
+    height: 62px;
     justify-content: center;
 
 }
@@ -544,7 +548,13 @@ margin-bottom: 7px;
 .event-content {
     text-align: left;
 }
-
+.event-content-wrap {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .event-content small {
     font-weight: 600;
     letter-spacing: .3px;
@@ -570,7 +580,7 @@ margin-bottom: 7px;
     color: #6a6666;
     font-weight: 600;
     letter-spacing: .3px;
-    margin-bottom: 6px;
+    margin-bottom:8px;
 }
 .about-section .synopsis {
     font-size: 18px;

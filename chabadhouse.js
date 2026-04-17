@@ -115,6 +115,8 @@ window.addEventListener("DOMContentLoaded", function () {
     if (!match) return;
     var monthIndex = new Date(match[1] + " 1").getMonth();
     var day = match[2];
+    var timeParts = small.textContent.split(" - ");
+    if (timeParts.length > 1) small.textContent = timeParts[1].trim();
     var dateBox = document.createElement("div");
     dateBox.className = "event-date";
     dateBox.innerHTML = "<span>" + day + "</span>" + monthAbbr[monthIndex];
