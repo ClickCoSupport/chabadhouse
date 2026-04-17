@@ -122,16 +122,16 @@ window.addEventListener("DOMContentLoaded", function () {
     eventContent.className = "event-content";
     while (li.firstChild) eventContent.appendChild(li.firstChild);
     var link = eventContent.querySelector("a");
+    var eventContentWrap = document.createElement("div");
+    eventContentWrap.className = "event-content-wrap";
+    eventContentWrap.appendChild(eventContent);
     if (link) {
       var btn = document.createElement("a");
       btn.href = link.href;
       btn.className = "event-details-btn";
       btn.textContent = "View Details";
-      eventContent.appendChild(btn);
+      eventContentWrap.appendChild(btn);
     }
-    var eventContentWrap = document.createElement("div");
-    eventContentWrap.className = "event-content-wrap";
-    eventContentWrap.appendChild(eventContent);
     li.appendChild(dateBox);
     li.appendChild(eventContentWrap);
   });

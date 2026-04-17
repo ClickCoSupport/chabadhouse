@@ -345,6 +345,8 @@ body #tabContentMain .co_menu_item span.parent a, body.cco_body #tabContentMain 
 
 /* buttons */
  .message .wrapper .widget_content .readMore, .cycle-caption a, .donate_link a, .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore, .hp_subscribe .wrapper #formContainer fieldset input[type=submit], .banner .widget_content.index_format .item .readMore, .message .wrapper .widget_content .readMore, .event-details-btn {
+  padding: 12px 25px;
+  text-transform: uppercase;
 color: #f9f6f0 !important;
 border-radius: 4px;
 background: var( --e-global-color-accent ) !important;
@@ -435,6 +437,12 @@ body>#header>.wrapper {
 }
 
 /* Shabbat & Events*/
+a.event-details-btn {
+    padding: 4px 9px;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    font-weight: 500;
+}
 
 .hp_content_wrapper .readMore:hover {
   background-color: transparent;
@@ -499,7 +507,7 @@ border-radius: 13px;
     display: inline-block;
 }
 .hp_content_wrapper [class*=widget-].upcoming_events .readMore {
-   
+   text-align: right;
     color: var(--e-global-color-primary);
     border: 0;
     padding: 0;
@@ -793,7 +801,6 @@ text-transform: none;
   text-align: left;
       color: var(--e-global-color-primary);
   font-family: var(--heading-font-family), serif !important;
-  transition: color 0.3s ease;
 }
 
 
@@ -804,9 +811,6 @@ text-transform: none;
 
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .icon {
   text-align: left;
-  border-radius: 50%;
-  padding: 8px;
-  transition: background 0.3s ease;
 }
 
 @media (max-width: 800px) {
