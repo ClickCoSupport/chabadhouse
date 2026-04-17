@@ -498,6 +498,7 @@ content: none !important;
     font-weight: 600;
     margin-top: 11px;
 }
+
 .banner .widget_content.index_format .item .title {
        margin-bottom: 12px;
 }
@@ -733,4 +734,9 @@ text-transform: none;
 
 .candlelighting_heading .section_subheading {
     color: #f4eee2 !important;
+}
+
+/* main titltel */
+.banner .widget_content.index_format .item .title, .banner .widget_content.index_format .item .title a, .chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5 {
+font-size: 45px;
 }
