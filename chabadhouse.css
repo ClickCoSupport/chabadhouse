@@ -468,6 +468,33 @@ border-radius: 13px;
 .upcoming_events .wrapper {
     margin-top: 63px;
 }
+.hp_content_wrapper [class*=widget-].upcoming_events ul {
+   
+    margin: 0;
+}
+.hp_content_wrapper .g320 .upcoming_events .widget_content {
+      display: flex;
+    flex-direction: column;
+}
+.hp_content_wrapper [class*=widget-].upcoming_events .readMore:after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: var(--e-global-color-primary);
+    margin-left: 4px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 10px;
+    font-style: normal;
+    position: relative;
+    top: -1px;
+    display: inline-block;
+}
+.hp_content_wrapper [class*=widget-].upcoming_events .readMore {
+   
+    color: var(--e-global-color-primary);
+    border: 0;
+    padding: 0;
+}
 .events-shabbat {
    
     justify-content: space-around;
