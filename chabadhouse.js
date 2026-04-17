@@ -39,6 +39,43 @@ window.addEventListener("DOMContentLoaded", function () {
     item.appendChild(iconContent);
   });
 
+  var testimonialSlider = {
+    init: function init() {
+      this.setupSlider();
+    },
+    setupSlider: function setupSlider() {
+      var sliderContainer = jQuery(".testimonials");
+      var slidesContainer = jQuery(".testimonials .widget_content");
+
+      sliderContainer.append("<div class='carousel-container'><div class='owl-carousel'></div></div>");
+      var slider = sliderContainer.find(".owl-carousel");
+
+      slidesContainer.find(".item").each(function () {
+        var itemEl = jQuery("<div class='item'><div class='image-container'></div><div class='text-container'></div></div>");
+        jQuery(this).find(".icon").appendTo(itemEl.find('.image-container'));
+        jQuery(this).contents().appendTo(itemEl.find('.text-container'));
+        itemEl.appendTo(slider);
+      });
+
+      var singleItem = slider.find('.item').length == 1;
+      slider.owlCarousel({
+        loop: singleItem ? false : true,
+        margin: 0,
+        nav: singleItem ? false : true,
+        touchDrag: singleItem ? false : true,
+        mouseDrag: singleItem ? false : true,
+        items: 1,
+        addClassActive: true,
+        autoplay: true,
+        autoplayTimeout: 5000
+      });
+    }
+  };
+
+  if (jQuery(".testimonials").length) {
+    testimonialSlider.init();
+  }
+
   var bodyElement = document.querySelector("body.home .hp-row-first a");
   if (bodyElement) {
     bodyElement.innerHTML = autoplayingVideo;
