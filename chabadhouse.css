@@ -587,6 +587,10 @@ text-transform: none;
   height: 30px;
   object-fit: contain;
   float: none;
+ 
+}
+.ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .icon {
+ 
   padding: 20px;
   background: var(--e-global-color-primary);
   border-radius: 50%;
@@ -638,7 +642,8 @@ text-transform: none;
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .title, .ct-h-actions .item .title a {
   font-size: 20px;
     margin-bottom: 8px;
-  margin-top: 20px;
+    margin-top: 0;
+  
   text-align: left;
       color: var(--e-global-color-primary);
   font-family: var(--heading-font-family), serif !important;
