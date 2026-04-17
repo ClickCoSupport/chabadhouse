@@ -475,6 +475,9 @@ border-radius: 13px;
 .hp_content_wrapper .g320 .upcoming_events .widget_content {
       display: flex;
     flex-direction: column;
+    padding: 0;
+   
+    padding-top: 19px;
 }
 .hp_content_wrapper [class*=widget-].upcoming_events .readMore:after {
     content: "\f054";
@@ -497,7 +500,7 @@ border-radius: 13px;
 }
 .events-shabbat {
    
-    justify-content: space-around;
+   justify-content: space-between;
 }
 .events-shabbat .clear {
     display: none;
@@ -508,13 +511,16 @@ border-radius: 13px;
 }
 
 .events-shabbat .g320 {
-  width: 44%;
+  width:48%;
 }
 .events-shabbat .g320:nth-child(2) {
     max-width: 42%;
 }
 .chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5 {
 margin-bottom: 7px;
+}
+.upcoming_events h5 {
+    text-align: left !important;
 }
 .upcoming_events h6 a {
        font-size: 23px;
