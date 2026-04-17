@@ -133,11 +133,14 @@ window.addEventListener("DOMContentLoaded", function () {
   var connect = document.querySelector(".connect");
   var hpSubscribe = document.querySelector(".hp_subscribe");
   if (connect && hpSubscribe) {
+    var connectWrapper = document.createElement("div");
+    connectWrapper.className = "connect-wrapper";
     var connectSection = document.createElement("div");
     connectSection.className = "connect-section";
-    connect.parentNode.insertBefore(connectSection, connect);
+    connect.parentNode.insertBefore(connectWrapper, connect);
     connectSection.appendChild(connect);
     connectSection.appendChild(hpSubscribe);
+    connectWrapper.appendChild(connectSection);
   }
 
   var bodyElement = document.querySelector("body.home .hp-row-first a");
