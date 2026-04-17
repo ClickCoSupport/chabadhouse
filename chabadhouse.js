@@ -107,6 +107,16 @@ window.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(owlJS);
   }
 
+  var connect = document.querySelector(".connect");
+  var hpSubscribe = document.querySelector(".hp_subscribe");
+  if (connect && hpSubscribe) {
+    var connectSection = document.createElement("div");
+    connectSection.className = "connect-section";
+    connect.parentNode.insertBefore(connectSection, connect);
+    connectSection.appendChild(connect);
+    connectSection.appendChild(hpSubscribe);
+  }
+
   var bodyElement = document.querySelector("body.home .hp-row-first a");
   if (bodyElement) {
     bodyElement.innerHTML = autoplayingVideo;

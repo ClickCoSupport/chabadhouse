@@ -882,15 +882,6 @@ font-size: 45px;
   font-size: 18px;
   line-height: 130%;
   text-align: center;
-  position: relative;
-}
-.testimonials .owl-carousel .item .synopsis:before {
-  content: url('https://clickcosupport.github.io/chabadhouse/quote.png');
-  left: 0;
-  position: absolute;
-  top: -13px;
-  margin-top: 13px;
-  margin-left: 85px;
 }
 .testimonials .owl-carousel .item .readMore {
   display: inline-block;
@@ -932,10 +923,20 @@ font-size: 45px;
     letter-spacing: -0.3px;
 }
 
+.testimonials .synopsis:before {
+    content: url(https://clickcosupport.github.io/chabadhouse/quote.png);
+    left: 0;
+    position: absolute;
+    top: -13px;
+    margin-top: 13px;
+    margin-left: 85px;
+    z-index: -1;
+}
+
 .testimonials .title {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 .testimonials .title span {
    color: #6a6666;
@@ -957,6 +958,21 @@ font-size: 45px;
     color: var( --e-global-color-primary);
         font-family: var(--heading-font-family), serif;
 }
-.connect {
+.connect-section {
     background: #f4eee2;
 }
+
+/* photos */
+.photos {
+    background: var(--e-global-color-primary);
+    position: relative;
+}
+.photos::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://clickcosupport.github.io/chabadhouse/footer-background.webp') no-repeat center center / cover;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
