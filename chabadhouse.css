@@ -744,11 +744,6 @@ font-size: 45px;
 
 /* testimonials */
 
-.testimonials {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background: #65BDB0;
-}
 .testimonials .widget-4 { display: none; }
 .testimonials .carousel-container {
   width: 1105px;
@@ -794,7 +789,7 @@ font-size: 45px;
 .testimonials .owl-carousel .owl-nav .owl-prev span,
 .testimonials .owl-carousel .owl-nav .owl-next span {
   color: var(--e-global-color-accent);
-  font-size: 82px;
+  font-size: 55px;
 }
 @media (max-width: 1260px) {
   .testimonials .owl-carousel .owl-nav .owl-prev,
@@ -830,7 +825,7 @@ font-size: 45px;
   display: flex;
     flex-direction: column-reverse;
         align-items: center;
-    gap: 19px;
+    gap: 25px;
 }
 @media (max-width: 991px) {
   .testimonials .owl-carousel .item .text-container {
@@ -948,7 +943,7 @@ font-size: 45px;
     align-items: center;
 }
 .owl-carousel .owl-item img {
-       width: 56px;
+       width: 56px !important;
     border-radius: 50%;
      border: 3px solid #FEFDFC !important;
     outline: 1px solid var(--e-global-color-secondary);
@@ -959,12 +954,16 @@ font-size: 45px;
         font-family: var(--heading-font-family), serif;
 }
 .connect-section {
-    background: #f4eee2;
+    background: #f4eee2 !important;
+        display: flex;
+}
+.hp-row.hp_subscribe {
+    background: #f9f6f0;
 }
 
 /* photos */
 .photos {
-    background: var(--e-global-color-primary);
+    background: var(--e-global-color-primary) !important;
     position: relative;
 }
 .photos::before {
@@ -972,7 +971,7 @@ font-size: 45px;
     position: absolute;
     inset: 0;
     background: url('https://clickcosupport.github.io/chabadhouse/footer-background.webp') no-repeat center center / cover;
-    opacity: 0.2;
+    opacity: 0.03;
     pointer-events: none;
 }
 
