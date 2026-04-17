@@ -424,7 +424,7 @@ body>#header>.wrapper {
     content: none;
 }
 .candlelighting {
-    background: var(--e-global-color-primary) url('/media/images/1366/oVYc13661029.png') no-repeat center center / cover;
+    background: var(--e-global-color-primary) url('https://clickcosupport.github.io/chabadhouse/CandleBackground.png') no-repeat center center / cover;
 border-radius: 13px;
 }
 
@@ -722,5 +722,9 @@ text-transform: none;
         font-size: 29px;
     font-weight: 500;
     line-height: 1em;
+    color: #f4eee2;
+}
+
+.candlelighting_heading .section_subheading {
     color: #f4eee2;
 }
