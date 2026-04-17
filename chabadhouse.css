@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
 /* BRIGHT (default) */
 :root {
     --e-global-color-text: #323232;
@@ -584,15 +586,15 @@ text-transform: none;
 }
 
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .icon img {
-  width: 30px;
-  height: 30px;
+ width: 36px;
+    height: 36px;
   object-fit: contain;
   float: none;
- 
+     margin: 0;
 }
 .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .icon {
  
-  padding: 20px;
+     aspect-ratio: 1;
   background: var(--e-global-color-primary);
   border-radius: 50%;
   box-sizing: content-box;
@@ -685,8 +687,23 @@ text-transform: none;
   vertical-align: middle;
   width: 32%;
   gap: 14px;
+  align-items: center;
 }
 
 .departments .item::after {
     display: none;
+}
+
+.ct-h-actions .item .title a:after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: var(--e-global-color-primary);
+    margin-left: 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    font-style: normal;
+    position: relative;
+    top: -1px;
+    display: inline-block;
 }
