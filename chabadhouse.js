@@ -107,6 +107,29 @@ window.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(owlJS);
   }
 
+  var monthAbbr = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  document.querySelectorAll(".upcoming_events li").forEach(function (li) {
+    var small = li.querySelector(".small");
+    if (!small) return;
+    var match = small.textContent.match(/(\w+)\s+(\d+),\s+\d{4}/);
+    if (!match) return;
+    var monthIndex = new Date(match[1] + " 1").getMonth();
+    var day = match[2];
+    var dateBox = document.createElement("div");
+    dateBox.className = "event-date";
+    dateBox.innerHTML = "<span>" + day + "</span>" + monthAbbr[monthIndex];
+    var eventContent = document.createElement("div");
+    eventContent.className = "event-content";
+    while (li.firstChild) eventContent.appendChild(li.firstChild);
+    li.appendChild(dateBox);
+    li.appendChild(eventContent);
+  });
+
+  jQuery(".departments .item").on("click", function () {
+    var href = jQuery(this).find("a").attr("href");
+    if (href) window.location.href = href;
+  }).css("cursor", "pointer");
+
   var connect = document.querySelector(".connect");
   var hpSubscribe = document.querySelector(".hp_subscribe");
   if (connect && hpSubscribe) {

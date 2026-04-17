@@ -208,7 +208,7 @@ body.sites-article #header_container .links .search-trigger-container .search-tr
 .hp_content_wrapper .latest_photos .readMore span,
 .latest_photos .readMore span,
 [class^=widget-].parsha .readMore,
-.mobile .promo_slider .slide_wrapper .caption {
+.mobile .promo_slider .slide_wrapper .caption, .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .float_left a {
     color: var(--e-global-color-secondary);
 }
 
@@ -303,7 +303,7 @@ body.cco_body #tabContentMain .co_submenu_container .co_column a,
 .message .wrapper .widget_content .item .title,
 .message .wrapper .widget_content .item .title a,
 .message .wrapper .widget_content.message_format h6,
-.hp-table .hp-row-first .promo_slider .slider .cycle-caption big, .section_heading {
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption big, .section_heading, .upcoming_events h6 a {
     font-family: var(--heading-font-family), serif;
     text-transform: none;
 }
@@ -423,23 +423,53 @@ body>#header>.wrapper {
 .hp_content_wrapper .g320:nth-child(2):after, .hp_content_wrapper .g320:nth-child(2):before{
     content: none;
 }
+
+/* Shabbat & Events*/
 .candlelighting {
     background: var(--e-global-color-primary) url('https://clickcosupport.github.io/chabadhouse/CandleBackground.png') no-repeat center center / cover;
 border-radius: 13px;
+padding-bottom: 56px;
+}
+.events-shabbat .clear {
+    display: none;
 }
 
+.events-shabbat .no_margin, .events-shabbat .g320  {
+    margin: 0 !important;
+}
+
+.events-shabbat .g320 {
+  width: 44%;
+}
+.events-shabbat .g320:nth-child(2) {
+    max-width: 42%;
+}
 .chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5 {
 margin-bottom: 7px;
 }
-
+.upcoming_events h6 a {
+       font-size: 23px;
+    text-transform: none;
+    letter-spacing: -.3px;
+}
 .upcoming_events li {
     border: 1px solid #f4eee2;
  background: #FEFDFC !important;
     padding: 18px 14px 14px 14px !important;
     border-radius: 10px;
     margin-bottom: 10px;
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
-
+.upcoming_events small {
+  font-size: 14px;
+    color: #6a6666;
+    font-weight: 600;
+    letter-spacing: .3px;
+    margin-bottom: 6px;
+}
 .about-section .synopsis {
     font-size: 18px;
     line-height: 1.3em;
@@ -453,7 +483,7 @@ letter-spacing: 0;
 }
 
 
-.hp-row, .hp-table>:nth-of-type(2n) {
+.hp-row, .hp-table>:nth-of-type(2n), .hp-row {
     padding: 100px 10px;
     background: #f9f6f0;
 
@@ -549,8 +579,8 @@ text-transform: none;
     padding-bottom: 0;
   }
 }
-/* sectio widths */
-.ct-h-actions .wrapper, .banner .widget_content.index_format .item {
+/* section widths */
+.ct-h-actions .wrapper, .banner .widget_content.index_format .item, .events-shabbat {
   width: 1080px;
   max-width: 90%;
   margin: 0 auto;
@@ -558,7 +588,9 @@ text-transform: none;
   padding-left: 15px;
   text-align: center;
 }
-
+ .hp-table {
+    background: #f9f6f0;
+}
 .ct-h-actions .widget_header {
   display: none;
 }
@@ -714,7 +746,7 @@ text-transform: none;
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
     color: var(--e-global-color-primary);
-    margin-left: 0;
+    margin-left: 4px;
     transition: color 0.3s ease, transform 0.3s ease;
     font-size: 16px;
     font-style: normal;
@@ -724,7 +756,10 @@ text-transform: none;
 }
 
 /* candles */
-
+.hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .float_left a {
+  
+    font-size: 17px;
+}
 .candlelighting_heading .section_heading {
         font-size: 29px !important;
     font-weight: 500 !important;
@@ -732,7 +767,7 @@ text-transform: none;
     color: #f4eee2 !important;
 }
 
-.candlelighting_heading .section_subheading {
+.candlelighting_heading .section_subheading, .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .when_to_light {
     color: #f4eee2 !important;
 }
 
