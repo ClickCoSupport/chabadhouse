@@ -303,7 +303,7 @@ body.cco_body #tabContentMain .co_submenu_container .co_column a,
 .message .wrapper .widget_content .item .title,
 .message .wrapper .widget_content .item .title a,
 .message .wrapper .widget_content.message_format h6,
-.hp-table .hp-row-first .promo_slider .slider .cycle-caption big {
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption big, .section_heading {
     font-family: var(--heading-font-family), serif;
     text-transform: none;
 }
@@ -472,13 +472,13 @@ content: none !important;
         position: relative;
     top: auto;
     right: auto;
-    margin-top: 18px;
+    margin-top: 34px;
 }
 .banner .widget_content.index_format .item {
        background: none;
     padding: 0;
     flex-direction: row;
-    gap: 41px;
+    gap: 54px;
         display: flex;
         align-items: stretch;
     align-items: center;
@@ -486,6 +486,9 @@ content: none !important;
 .about-content {
     width: 55%;
     padding: 20px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    
 }
 .banner .widget_content.index_format .item .title, .banner .widget_content.index_format .item .title a {
         color: var(--e-global-color-primary);
@@ -493,6 +496,7 @@ content: none !important;
     text-transform: none;
     letter-spacing: 0;
     font-weight: 600;
+    margin-top: 11px;
 }
 .banner .widget_content.index_format .item .title {
        margin-bottom: 12px;
@@ -500,7 +504,11 @@ content: none !important;
 .banner .widget_content.index_format .item .subtitle {
 text-transform: none;
     font-size: 18px;
-    line-height: 1.3em;
+    line-height: 1.5em;
+        padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    position: relative;
 }
 
 
@@ -706,4 +714,13 @@ text-transform: none;
     position: relative;
     top: -1px;
     display: inline-block;
+}
+
+/* candles */
+
+.candlelighting_heading .section_heading {
+        font-size: 29px;
+    font-weight: 500;
+    line-height: 1em;
+    color: #f4eee2;
 }
