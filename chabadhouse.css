@@ -130,7 +130,9 @@ body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent a,
 .mobile .promo_slider .cycle-controlNav .circle {
     border-color: var(--e-global-color-primary);
 }
-
+.v380 {
+  height: auto;
+}
 .co_global_button.yellow .button,
 .banner .widget_content.index_format .item .readMore:hover,
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore:hover,
@@ -559,6 +561,7 @@ content: none !important;
     width: 55%;
     padding: 20px 0;
     flex-direction: column;
+        display: flex;
     align-items: flex-start;
     
 }
@@ -623,7 +626,7 @@ text-transform: none;
   }
 }
 /* section widths */
-.ct-h-actions .wrapper, .banner .widget_content.index_format .item, .events-shabbat, .connect-section {
+.ct-h-actions .wrapper, .banner .widget_content.index_format .item, .events-shabbat, .connect-section, .latest_photos .wrapper {
   width: 1080px;
   max-width: 90%;
   margin: 0 auto;
@@ -1103,3 +1106,14 @@ font-size: 45px;
     pointer-events: none;
 }
 
+.latest_photos .widget_content>ul {
+  
+    display: flex;
+    align-items: stretch;
+}
+
+
+.latest_photos .widget_content>ul li, .latest_photos .widget_content>ul li:first-child {
+       height: 220px;
+    width: 25%;
+}
