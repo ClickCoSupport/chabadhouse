@@ -303,7 +303,7 @@ body.cco_body #tabContentMain .co_submenu_container .co_column a,
 .message .wrapper .widget_content .item .title,
 .message .wrapper .widget_content .item .title a,
 .message .wrapper .widget_content.message_format h6,
-.hp-table .hp-row-first .promo_slider .slider .cycle-caption big, .section_heading, .upcoming_events h6 a {
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption big, .section_heading, .upcoming_events h6 a, .event-date span {
     font-family: var(--heading-font-family), serif;
     text-transform: none;
 }
@@ -425,10 +425,40 @@ body>#header>.wrapper {
 }
 
 /* Shabbat & Events*/
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    text-transform: uppercase;
+      color: var(--e-global-color-primary);
+          border-right: 1px solid #f4eee2;
+   padding-right: 14px;
+    margin-right: 5px;
+position: relative;
+    height: 52px;
+    justify-content: center;
+
+}
+
+.event-date span {
+font-weight: 600;
+line-height: 100%;
+      font-size: 27px;
+}
 .candlelighting {
     background: var(--e-global-color-primary) url('https://clickcosupport.github.io/chabadhouse/CandleBackground.png') no-repeat center center / cover;
 border-radius: 13px;
 padding-bottom: 56px;
+}
+.upcoming_events .wrapper {
+    margin-top: 33px;
+}
+.events-shabbat {
+   
+    justify-content: space-around;
 }
 .events-shabbat .clear {
     display: none;
@@ -452,16 +482,28 @@ margin-bottom: 7px;
     text-transform: none;
     letter-spacing: -.3px;
 }
+.event-content {
+    text-align: left;
+}
+.event-content small {
+    font-weight: 600;
+    letter-spacing: .3px;
+    font-size: 15px !important;
+    color: #6a6666 !important;
+    margin-bottom: 7px;
+}
 .upcoming_events li {
     border: 1px solid #f4eee2;
  background: #FEFDFC !important;
-    padding: 18px 14px 14px 14px !important;
+    padding: 14px 14px 15px 21px !important;
     border-radius: 10px;
     margin-bottom: 10px;
         display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    display: flex;
 }
 .upcoming_events small {
   font-size: 14px;
@@ -532,7 +574,7 @@ content: none !important;
 .banner .widget_content.index_format .item .title {
        margin-bottom: 12px;
 }
-.banner .widget_content.index_format .item .subtitle {
+.banner .widget_content.index_format .item .subtitle, .connect .synopsis {
 text-transform: none;
     font-size: 18px;
     line-height: 1.5em;
@@ -540,6 +582,7 @@ text-transform: none;
     margin: 0;
     margin-bottom: 10px;
     position: relative;
+    text-align: left;
 }
 
 
@@ -779,6 +822,10 @@ font-size: 45px;
 
 /* testimonials */
 
+.testimonials {
+    padding-bottom: 110px;
+}
+
 .testimonials .widget-4 { display: none; }
 .testimonials .carousel-container {
   width: 1105px;
@@ -975,17 +1022,71 @@ font-size: 45px;
     outline: 1px solid var(--e-global-color-secondary);
 }
 /* connect */
+
+
+.subscribe label{
+    display: block;
+    text-align: left;
+    font-size: 15px;
+}
+.hp_subscribe .wrapper #formContainer fieldset input#Email {
+    width: 100%;
+}
+.hp_subscribe .wrapper #formContainer fieldset input {
+  width: 100%;
+      background: #FCFAF7;
+    border: 1px solid #f4eee2;
+    border-radius: 7px;
+}
+.hp_subscribe form {
+   display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.hp_subscribe fieldset{
+      display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+.hp_subscribe h5 {
+    font-size: 35px !important;
+}
+.hp_subscribe {
+    width: 46%;
+    border-radius: 14px;
+}
+.connect {
+    width: 52%;
+}
+
+.connect .widget_header {
+    display: none;
+}
+
 .connect .title {
-    color: var( --e-global-color-primary);
-        font-family: var(--heading-font-family), serif;
+    color: var(--e-global-color-primary);
+    font-family: var(--heading-font-family), serif;
+    line-height: 110%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.connect-wrapper {
+   background: #f4eee2 !important;
+   padding-bottom: 0 !important;
+    margin-bottom: -50px;
 }
 .connect-section {
-    background: #f4eee2 !important;
+   gap: 30px;
+    justify-content: space-between;
         display: flex;
         padding-top:30px;
+        align-items: center;
 }
 .hp-row.hp_subscribe {
     background: #f9f6f0;
+    z-index: 1;
 }
 
 /* photos */
