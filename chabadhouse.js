@@ -57,6 +57,27 @@ window.addEventListener("DOMContentLoaded", function () {
         itemEl.appendTo(slider);
       });
 
+      slider.find('.item').each(function () {
+        var item = jQuery(this);
+        var img = item.find('.image-container img');
+        var textContainer = item.find('.text-container');
+        var title = textContainer.find('.title');
+        var testimonialPerson = jQuery("<div class='testimonial-person'></div>");
+
+        img.appendTo(testimonialPerson);
+
+        if (title.length) {
+          var titleText = title.text();
+          if (titleText.indexOf('|') !== -1) {
+            var parts = titleText.split('|');
+            title.html(parts[0].trim() + ' <span>' + parts[1].trim() + '</span>');
+          }
+          title.appendTo(testimonialPerson);
+        }
+
+        textContainer.prepend(testimonialPerson);
+      });
+
       var singleItem = slider.find('.item').length == 1;
       slider.owlCarousel({
         loop: singleItem ? false : true,
