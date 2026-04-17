@@ -107,16 +107,6 @@ window.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(owlJS);
   }
 
-  document.querySelectorAll(".event-content").forEach(function (el) {
-    var link = el.querySelector("a");
-    if (!link) return;
-    var btn = document.createElement("a");
-    btn.href = link.href;
-    btn.className = "event-details-btn";
-    btn.textContent = "View Details";
-    el.appendChild(btn);
-  });
-
   var monthAbbr = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   document.querySelectorAll(".upcoming_events li").forEach(function (li) {
     var small = li.querySelector("small");
@@ -131,6 +121,14 @@ window.addEventListener("DOMContentLoaded", function () {
     var eventContent = document.createElement("div");
     eventContent.className = "event-content";
     while (li.firstChild) eventContent.appendChild(li.firstChild);
+    var link = eventContent.querySelector("a");
+    if (link) {
+      var btn = document.createElement("a");
+      btn.href = link.href;
+      btn.className = "event-details-btn";
+      btn.textContent = "View Details";
+      eventContent.appendChild(btn);
+    }
     var eventContentWrap = document.createElement("div");
     eventContentWrap.className = "event-content-wrap";
     eventContentWrap.appendChild(eventContent);
