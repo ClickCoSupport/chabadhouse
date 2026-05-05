@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function () {
   var script2 = document.createElement("script");
   script2.textContent = 'if (typeof ObjectFitVideos == "function") objectFitVideos()';
 
-  document.querySelectorAll(".big").forEach(function (el) {
+  document.querySelectorAll(".big, big").forEach(function (el) {
     el.innerHTML = el.innerHTML.replace(/\|([^|]+)\|/g, '<em>$1</em>');
   });
 
@@ -181,7 +181,7 @@ window.addEventListener("DOMContentLoaded", function () {
     if (href) window.location.href = href;
   }).css("cursor", "pointer");
 
-  var bodyElement = document.querySelector("body.home .hp-row-first a");
+  var bodyElement = document.querySelector(".hp-row-first a");
   if (bodyElement) {
     bodyElement.innerHTML = autoplayingVideo;
     bodyElement.appendChild(script1);
