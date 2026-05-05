@@ -1,5 +1,9 @@
 window.addEventListener("DOMContentLoaded", function () {
 
+  document.querySelectorAll(".big").forEach(function (el) {
+    el.innerHTML = el.innerHTML.replace(/\|([^|]+)\|/g, '<em>$1</em>');
+  });
+
   var bannerItem = document.querySelector(".banner .widget_content.index_format .item");
   if (bannerItem) {
     var iconDiv = bannerItem.querySelector(".icon");
@@ -139,6 +143,19 @@ window.addEventListener("DOMContentLoaded", function () {
     connectSection.appendChild(hpSubscribe);
     connectWrapper.appendChild(connectSection);
   }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.hp-row').forEach(function (row) {
+    observer.observe(row);
+  });
 
   var photos = document.querySelector('.hp-row.photos');
   var footer = document.getElementById('footer');
