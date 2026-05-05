@@ -1,16 +1,4 @@
 window.addEventListener("DOMContentLoaded", function () {
-  var cfg = window.heroVideo || {};
-  var src      = cfg.src      || "https://www1.clhosting.org/media/av/1368/XwQU13688984.mp4";
-  var srcLarge = cfg.srcLarge || "https://www1.clhosting.org/media/av/1368/XwQU13688984.mp4";
-  var poster   = cfg.poster   || "/media/images/1366/tCdY13660649.jpg";
-  var fallback = cfg.fallback || "https://www1.clhosting.org/media/av/1368/BiRt13688990.mp4";
-
-  var autoplayingVideo = '<div id="hero"><div class="texture"></div><video loop muted autoplay playsinline webkit-playsinline src="' + src + '" poster="' + poster + '">Your browser does not support the video tag.</video></div><style>#hero::after{width:100%;height:100%;content:"";position:absolute;left:0;background:rgba(0,0,0,0.5)}#hero video{width:100%;height:100%;position:absolute;left:0;object-fit:cover;}</style>';
-
-  var script1 = document.createElement("script");
-  script1.src = "https://www.unpkg.com/object-fit-videos@1.0.4/object-fit-videos.js";
-  var script2 = document.createElement("script");
-  script2.textContent = 'if (typeof ObjectFitVideos == "function") objectFitVideos()';
 
   var bannerItem = document.querySelector(".banner .widget_content.index_format .item");
   if (bannerItem) {
@@ -163,34 +151,4 @@ window.addEventListener("DOMContentLoaded", function () {
     if (href) window.location.href = href;
   }).css("cursor", "pointer");
 
-  var bodyElement = document.querySelector("body.home .hp-row-first a");
-  if (bodyElement) {
-    bodyElement.innerHTML = autoplayingVideo;
-    bodyElement.appendChild(script1);
-    bodyElement.appendChild(script2);
-
-    var heroVid = document.querySelector("#hero video");
-
-    if (window.matchMedia("(min-width: 500px)").matches) {
-      heroVid.src = srcLarge;
-    }
-
-    function swapToFallback() {
-      if (heroVid.dataset.usingFallback) return;
-      heroVid.dataset.usingFallback = "1";
-      heroVid.src = fallback;
-      heroVid.load();
-      heroVid.play().catch(function () {});
-    }
-
-    heroVid.addEventListener("error", swapToFallback);
-
-    var stallTimer = setTimeout(function () {
-      if (heroVid.readyState < 3) swapToFallback();
-    }, 4000);
-
-    heroVid.addEventListener("playing", function () {
-      clearTimeout(stallTimer);
-    });
-  }
 });
