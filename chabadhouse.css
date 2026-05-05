@@ -1083,7 +1083,7 @@ text-transform: none;
 @media (max-width: 991px) {
   .testimonials .owl-carousel .item .image-container {
     width: 100%;
-    padding-top: 35%;
+    padding-top: 0;
   }
 }
 .testimonials .owl-carousel .item .image-container a {
@@ -1183,9 +1183,7 @@ text-transform: none;
 
 
 .subscribe label{
-    display: block;
-    text-align: left;
-    font-size: 15px;
+    display: none;
 }
 .hp_subscribe .wrapper #formContainer fieldset input#Email {
     width: 100%;
@@ -1195,6 +1193,9 @@ text-transform: none;
       background: #FCFAF7;
     border: 1px solid #f4eee2;
     border-radius: 7px;
+}
+.hp_subscribe .wrapper #formContainer fieldset input::placeholder {
+    color: #667085;
 }
 .hp_subscribe form {
    display: flex;
@@ -1331,7 +1332,7 @@ text-transform: none;
         width: 97%;
     }
     .ct-h-actions .item {
-        width: 42%;
+        width: 50%;
     }
     .banner .widget_content.index_format .item {
         flex-direction: column-reverse;
@@ -1340,7 +1341,78 @@ text-transform: none;
         width: 100%;
     }
     .events-shabbat {
-        flex-direction: column;
         gap: 40px;
+        display: flex;
+    }
+    .events-shabbat .g320 {
+        width: 51%;
+    }
+    .events-shabbat .g320:nth-child(2) {
+        width: 43%;
+    }
+    .events-shabbat .medium_top_padding {
+        padding-top: 0;
+    }
+    .banner-updates img {
+        width: 58%;
+        height: 273px;
+    }
+    .banner-updates .item {
+        align-items: flex-start !important;
+        gap: 14px;
+    }
+    .candlelighting {
+        padding: 30px 0;
+    }
+    .testimonials .owl-carousel {
+        display: flex !important;
+        flex-direction: column;
+    }
+    .candlelighting_heading .section_heading {
+        font-size: 23px !important;
+    }
+    .testimonials .owl-carousel .owl-nav {
+        padding-top: 0;
+    }
+    .testimonials .synopsis {
+        font-size: 32px !important;
+    }
+    .hp_subscribe h5 {
+        font-size: 28px !important;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .events-shabbat {
+        flex-direction: column;
+    }
+}
+
+
+/* ============================================
+   OVERRIDES
+   ============================================ */
+
+@media (max-width: 1000px) {
+    .hp_content_wrapper .g320:nth-child(2) {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        border-top: none;
+    }
+}
+
+
+/* ============================================
+   MOBILE — 767px and below
+   ============================================ */
+
+@media (max-width: 767px) {
+    .ct-h-actions .item {
+        width: 100%;
+    }
+    .ct-h-actions [class^="widget-"].chabad_updates .widget_content .item .synopsis {
+        text-align: left !important;
     }
 }
