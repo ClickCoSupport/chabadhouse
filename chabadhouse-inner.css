@@ -4,4 +4,15 @@
 
 #BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper {
     background: #f4eee2 !important;
+    border-bottom: none;
+}
+
+.co_content_container {
+    background: #f9f6f0;
+}
+
+@media (min-width: 1025px) {
+    body.sites-article #content {
+        margin-top: 104px;
+    }
 }
