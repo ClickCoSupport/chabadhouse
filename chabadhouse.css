@@ -2,6 +2,8 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
+@import url('chabadhouse-inner.css');
+
 /* BRIGHT (default) */
 :root {
     --e-global-color-text: #323232;
