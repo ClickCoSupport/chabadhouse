@@ -152,6 +152,12 @@ window.addEventListener("DOMContentLoaded", function () {
     connectWrapper.appendChild(connectSection);
   }
 
+  var photos = document.querySelector('.hp-row.photos');
+  var footer = document.getElementById('footer');
+  if (photos && footer) {
+    footer.insertBefore(photos, footer.firstChild);
+  }
+
   jQuery(".departments .item").on("click", function () {
     var href = jQuery(this).find("a").attr("href");
     if (href) window.location.href = href;
