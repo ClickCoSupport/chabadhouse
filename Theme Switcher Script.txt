@@ -1,19 +1,11 @@
 
-<!-- ╔══════════════════════════════════════════════════╗
-     ║         CHABAD HOUSE — SITE SETTINGS            ║
-     ╚══════════════════════════════════════════════════╝ -->
-
 <script>
 
-  /* THEME
-     Paste one of the options below as the value.
-     Options:  theme-corporate  |  theme-elegant  |  theme-playful  |  theme-soft
-     Delete the line entirely to use the default bright theme. */
-  window.siteTheme = 'theme-elegant';
+  /* Step 1 THEME: Swap the value below to any of these options: theme-bright  |  theme-corporate  |  theme-elegant  |  theme-playful  |  theme-soft */
+  window.siteTheme = 'theme-bright';
 
 
-  /* FILE PATHS
-     Replace the path on the right of each line with the real file path from your media library. */
+  /* Step 2 FILE PATHS: Replace the path on the right of each line with the real file path from your media library. */
   window.siteFiles = {
     Logo:          '/media/images/1366/fLFc13666007.png',   // header logo
     InnerHero:     '/media/images/1368/AvOx13689095.jpg',   // inner-page background image
