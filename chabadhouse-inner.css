@@ -16,3 +16,11 @@
         margin-top: 104px;
     }
 }
+
+div#ContentBody {
+    min-height: 70vh;
+}
+
+div#confirm-wrapper::after, div#donate-wrapper::after {
+    background-color: transparent;
+}
