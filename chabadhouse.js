@@ -13,6 +13,17 @@ window.addEventListener("DOMContentLoaded", function () {
   var script2 = document.createElement("script");
   script2.textContent = 'if (typeof ObjectFitVideos == "function") objectFitVideos()';
 
+  var privacyLink = document.querySelector('.privacy-link');
+  if (privacyLink) {
+    var siteBy = document.createTextNode(' | Site by ');
+    var clickCo = document.createElement('a');
+    clickCo.href = 'https://theclickco.com/';
+    clickCo.target = '_blank';
+    clickCo.textContent = 'Click Co.';
+    privacyLink.parentNode.appendChild(siteBy);
+    privacyLink.parentNode.appendChild(clickCo);
+  }
+
   var street = document.querySelector('.footer-street');
   var cityState = document.querySelector('.footer-city-state');
   if (street && cityState) {
