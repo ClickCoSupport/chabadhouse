@@ -1,10 +1,15 @@
 window.addEventListener("DOMContentLoaded", function () {
 
-  var cfg = window.heroVideo || {};
-  var src      = cfg.src      || "https://www1.clhosting.org/media/av/1368/XwQU13688984.mp4";
-  var srcLarge = cfg.srcLarge || "https://www1.clhosting.org/media/av/1368/XwQU13688984.mp4";
-  var poster   = cfg.poster   || "/media/images/1366/tCdY13660649.jpg";
-  var fallback = cfg.fallback || "https://www1.clhosting.org/media/av/1368/BiRt13688990.mp4";
+  var f = window.siteFiles || {};
+
+  if (window.siteTheme) document.body.classList.add(window.siteTheme);
+  if (f.Logo)      document.documentElement.style.setProperty('--logo-url',       'url(' + f.Logo + ')');
+  if (f.InnerHero) document.documentElement.style.setProperty('--inner-hero-url', 'url(' + f.InnerHero + ')');
+
+  var src      = f.VideoMobile   || "https://www1.clhosting.org/media/av/1368/XwQU13688984.mp4";
+  var srcLarge = f.VideoDesktop  || "https://www1.clhosting.org/media/av/1368/XwQU13688984.mp4";
+  var poster   = f.VideoPoster   || "/media/images/1366/tCdY13660649.jpg";
+  var fallback = f.VideoFallback || "https://www1.clhosting.org/media/av/1368/BiRt13688990.mp4";
 
   var autoplayingVideo = '<div id="hero"><div class="texture"></div><video loop muted autoplay playsinline webkit-playsinline src="' + src + '" poster="' + poster + '">Your browser does not support the video tag.</video></div><style>#hero::after{width:100%;height:100%;content:"";position:absolute;left:0;background:rgba(0,0,0,0.5)}#hero video{width:100%;height:100%;position:absolute;left:0;object-fit:cover;}</style>';
 

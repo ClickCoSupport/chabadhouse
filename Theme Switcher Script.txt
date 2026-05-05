@@ -1,30 +1,26 @@
 
-<!-- Theme Switcher -->
-<!-- Options: theme-corporate | theme-elegant | theme-playful | theme-soft -->
-<!-- Remove the theme line entirely for the default BRIGHT theme -->
+<!-- ╔══════════════════════════════════════════════════╗
+     ║         CHABAD HOUSE — SITE SETTINGS            ║
+     ╚══════════════════════════════════════════════════╝ -->
 
 <script>
-  // ─── THEME ──────────────────────────────────────────────────────
-  document.body.classList.add('theme-elegant'); // ← swap theme name
 
-  // ─── FILE PATHS — update the right-side values only ─────────────
-  var files = {
-    "Logo.png":          "/media/images/1366/fLFc13666007.png",  // header logo
-    "InnerHero.jpg":     "/media/images/1368/AvOx13689095.jpg",  // inner page hero background
-    "VideoMobile.mp4":   "/media/av/XXXX/mobile.mp4",            // hero video (mobile)
-    "VideoDesktop.mp4":  "/media/av/XXXX/desktop.mp4",           // hero video (desktop)
-    "VideoPoster.jpg":   "/media/images/XXXX/poster.jpg",        // hero video poster image
-    "VideoFallback.mp4": "/media/av/XXXX/fallback.mp4",          // fallback looping video
+  /* THEME
+     Paste one of the options below as the value.
+     Options:  theme-corporate  |  theme-elegant  |  theme-playful  |  theme-soft
+     Delete the line entirely to use the default bright theme. */
+  window.siteTheme = 'theme-elegant';
+
+
+  /* FILE PATHS
+     Replace the path on the right of each line with the real file path from your media library. */
+  window.siteFiles = {
+    Logo:          '/media/images/1366/fLFc13666007.png',   // header logo
+    InnerHero:     '/media/images/1368/AvOx13689095.jpg',   // inner-page background image
+    VideoMobile:   '/media/av/XXXX/mobile.mp4',             // homepage video (phones)
+    VideoDesktop:  '/media/av/XXXX/desktop.mp4',            // homepage video (desktop)
+    VideoPoster:   '/media/images/XXXX/poster.jpg',         // video thumbnail shown while loading
+    VideoFallback: '/media/av/XXXX/fallback.mp4',           // backup video if main one fails
   };
 
-  // — do not edit below this line —
-  document.documentElement.style.setProperty('--logo-url',       'url(' + files["Logo.png"] + ')');
-  document.documentElement.style.setProperty('--inner-hero-url', 'url(' + files["InnerHero.jpg"] + ')');
-
-  window.heroVideo = {
-    src:      files["VideoMobile.mp4"],
-    srcLarge: files["VideoDesktop.mp4"],
-    poster:   files["VideoPoster.jpg"],
-    fallback: files["VideoFallback.mp4"],
-  };
 </script>
