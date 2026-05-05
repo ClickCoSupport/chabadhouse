@@ -409,11 +409,16 @@ margin-top: 11px;
                height: 0;
 padding-top: 0;
     }
-
+.branding-search {
+    margin-top: 0;
+}
 body>#header>.wrapper {
     background: var(--e-global-color-primary);
     max-width: 1450px;
     margin: auto;
+    max-height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #header, #header.on-scroll, body.sites-article #header {
        background: var(--e-global-color-primary);
@@ -421,13 +426,61 @@ body>#header>.wrapper {
 }
 
 #header_branding .site-logo-wrapper {
-        background: none;
-        border-radius: 0;
+    background: none;
+    border-radius: 0;
+    width: 300px;
+    height: 57px;
 }
 
 .branding-search #header_branding.logo img {
     filter: none;
+    display: none;
 }
+
+/* LOGO — swap out --logo-url to change the header logo */
+:root {
+    --logo-url: url(https://w2.chabad.org/media/images/1366/fLFc13666007.png);
+}
+
+.branding-search #header_branding {
+    margin-left: 0;
+    background: var(--logo-url);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+    max-height: 57px;
+}
+
+div#header_branding .site_title {
+    display: none !important;
+}
+
+#header_container {
+    padding-top: 0;
+}
+
+#header_container.header_container {
+    display: none;
+}
+
+.co_menu_container {
+    height: auto;
+}
+
+@supports (display: grid) {
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-wrapper {
+        height: fit-content;
+    }
+}
+
 /* homepage */
 
 .hp_content_wrapper .g320:nth-child(2):after, .hp_content_wrapper .g320:nth-child(2):before{
@@ -471,6 +524,9 @@ position: relative;
 font-weight: 600;
 line-height: 100%;
       font-size: 27px;
+}
+.times_wrapper.make_scrollable {
+    overflow: hidden !important;
 }
 .candlelighting {
     background: var(--e-global-color-primary) url('https://clickcosupport.github.io/chabadhouse/CandleBackground.png') no-repeat center center / cover;
@@ -700,6 +756,11 @@ text-transform: none;
   padding-left: 15px;
   text-align: center;
 }
+@media (max-width: 1140px) {
+  .ct-h-actions .wrapper, .banner .widget_content.index_format .item, .events-shabbat, .connect-section, .latest_photos .wrapper, #footer .g960 {
+    width: 98%;
+  }
+}
  .hp-table {
     background: #f9f6f0;
 }
@@ -898,7 +959,22 @@ text-transform: none;
 
 /* main title*/
 .banner .widget_content.index_format .item .title, .banner .widget_content.index_format .item .title a, .chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5, .connect .title {
-font-size: 45px;
+    font-size: 45px;
+}
+@media (max-width: 1170px) {
+    .banner .widget_content.index_format .item .title, .banner .widget_content.index_format .item .title a, .chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5, .connect .title {
+        font-size: 42px;
+    }
+}
+@media (max-width: 1024px) {
+    .banner .widget_content.index_format .item .title, .banner .widget_content.index_format .item .title a, .chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5, .connect .title {
+        font-size: 31px;
+    }
+}
+@media (max-width: 767px) {
+    .banner .widget_content.index_format .item .title, .banner .widget_content.index_format .item .title a, .chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5, .connect .title {
+        font-size: 27px;
+    }
 }
 
 
@@ -1243,4 +1319,28 @@ font-size: 45px;
     color: #f4eee2;
         font-size: 15px;
    font-family:var(--paragraph-font-family);
+}
+
+
+/* ============================================
+   TABLET / LAPTOP — 1100px and below
+   ============================================ */
+
+@media (max-width: 1100px) {
+    .ct-h-actions .wrapper, .banner .widget_content.index_format .item, .events-shabbat, .connect-section, .latest_photos .wrapper, #footer .g960 {
+        width: 97%;
+    }
+    .ct-h-actions .item {
+        width: 42%;
+    }
+    .banner .widget_content.index_format .item {
+        flex-direction: column-reverse;
+    }
+    .about-content {
+        width: 100%;
+    }
+    .events-shabbat {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
