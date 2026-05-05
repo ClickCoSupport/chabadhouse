@@ -1,0 +1,27 @@
+
+<!-- Theme Switcher — change the class name to switch themes -->
+<!-- Options: theme-corporate | theme-elegant | theme-playful | theme-soft -->
+<!-- Remove theme line entirely for the default BRIGHT theme -->
+
+<!-- Logo override — replace the URL below with the client's logo -->
+<!-- Fallback (if removed): https://w2.chabad.org/media/images/1366/fLFc13666007.png -->
+
+<!-- Video override — remove this block to use the default video -->
+<!-- Default video: /media/av/1366/YQUv13660646.mp4 -->
+<!-- Default poster: /media/images/1366/tCdY13660649.jpg -->
+
+<script>
+  document.body.classList.add('theme-elegant'); // ← swap theme name
+
+  document.documentElement.style.setProperty(
+    '--logo-url',
+    'url(https://w2.chabad.org/media/images/1366/fLFc13666007.png)' // ← swap logo URL
+  );
+
+  window.heroVideo = {
+    src:      "/media/av/XXXX/mobile.mp4",    // ← mobile video
+    srcLarge: "/media/av/XXXX/desktop.mp4",   // ← desktop video
+    poster:   "/media/images/XXXX/poster.jpg", // ← poster image
+    fallback: "/media/av/XXXX/fallback.mp4"   // ← looping gif fallback (mp4)
+  };
+</script>
