@@ -387,7 +387,11 @@ font-size: 87px;
     }
 }
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption p {
-        max-width: 811px;
+    max-width: 811px;
+}
+.cycle-caption p i, .promo_slider .cycle-caption p em {
+    font-style: italic;
+    font-family: var(--heading-font-family), serif !important;
 }
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption {
        top: 53%;
