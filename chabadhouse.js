@@ -15,6 +15,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
   var privacyLink = document.querySelector('.privacy-link');
   if (privacyLink) {
+    var br = document.createElement('br');
+    privacyLink.parentNode.insertBefore(br, privacyLink);
     var siteBy = document.createTextNode(' | Site by ');
     var clickCo = document.createElement('a');
     clickCo.href = 'https://theclickco.com/';
@@ -24,16 +26,6 @@ window.addEventListener("DOMContentLoaded", function () {
     privacyLink.parentNode.appendChild(clickCo);
   }
 
-  var street = document.querySelector('.footer-street');
-  var cityState = document.querySelector('.footer-city-state');
-  if (street && cityState) {
-    var streetEmpty = !street.textContent.trim();
-    var cityEmpty = cityState.textContent.replace(',', '').trim() === '';
-    if (streetEmpty && cityEmpty) {
-      street.textContent = '123 Main Street';
-      cityState.textContent = 'City, State 00000';
-    }
-  }
 
   document.querySelectorAll(".big, big").forEach(function (el) {
     el.innerHTML = el.innerHTML.replace(/\|([^|]+)\|/g, '<em>$1</em>');

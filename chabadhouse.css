@@ -807,6 +807,7 @@ content: none !important;
 }
 .ct-h-actions .item:hover .title a:after {
     transform: translateX(2px);
+    color: var(--e-global-color-accent);
 }
 /*
 @media (max-width: 800px) {
@@ -1001,7 +1002,7 @@ content: none !important;
 }
 @media (max-width: 767px) {
     .banner .widget_content.index_format .item .title, .banner .widget_content.index_format .item .title a, .chabad_updates .widget_header.widget_header h5, [class*=widget-] .widget_header.widget_header h5, .connect .title {
-        font-size: 27px;
+        font-size: 33px;
     }
 }
 
@@ -1368,7 +1369,7 @@ span.footer-title {
     align-items: baseline;
 }
 .footer-address {
- 
+ display:none;
     text-align: left;
 }
 #footer {
@@ -1400,7 +1401,7 @@ span.footer-title {
 
 #footer .footer_text .footer3, #footer .footer_text .footer3 b, .footer_inner_container {
     color: #f4eee2;
-        font-size: 15px;
+        font-size: 13px;
    font-family:var(--paragraph-font-family);
 }
 
@@ -1619,5 +1620,42 @@ span.footer-title {
     .ct-h-actions .wrapper, #footer .g960, .banner .widget_content.index_format .item, .events-shabbat, .connect-section, .latest_photos .wrapper, #footer .g960 {
         padding-right: 2px;
         padding-left: 2px;
+    }
+    .g960.footer_family_text {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer3 {
+        margin-bottom: -7px;
+        justify-content: center;
+    }
+    .photos {
+        padding-top: 119px;
+        padding-bottom: 13px;
+    }
+    .footer_inner_container {
+        max-width: 90%;
+        margin: auto;
+    }
+    .hp-table .hp-row-first .promo_slider .slider .slides {
+        padding-top: 30%;
+        padding-bottom: 84%;
+    }
+    .banner .widget_content.index_format .item .title,
+    .banner .widget_content.index_format .item .title a,
+    .chabad_updates .widget_header.widget_header h5,
+    [class*=widget-] .widget_header.widget_header h5,
+    .connect .title {
+        font-size: 33px;
+    }
+    .hp-table .hp-row-first .promo_slider .slider .cycle-caption big {
+        padding-top: 40px;
+        font-size: 33px;
+        max-width: 94%;
+    }
+    .promo_slider .cycle-caption p>span {
+        max-width: 94%;
+        margin: auto;
+        margin-bottom: 12px;
     }
 }

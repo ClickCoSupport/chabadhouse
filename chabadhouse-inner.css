@@ -2,6 +2,11 @@
    INNER PAGE STYLES
    ============================================ */
 
+/* INNER HERO — swap --inner-hero-url in Theme Switcher Script */
+:root {
+    --inner-hero-url: url(/media/images/1368/AvOx13689095.jpg);
+}
+
 #BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper {
     background: #f4eee2 !important;
     border-bottom: none;
@@ -23,4 +28,29 @@ div#ContentBody {
 
 div#confirm-wrapper::after, div#donate-wrapper::after {
     background-color: transparent;
+}
+
+.master-content-wrapper {
+    background-image: var(--inner-hero-url);
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}
+
+h1.article-header__title.js-article-title.js-page-title {
+    color: #F9F6F0 !important;
+    text-align: center;
+}
+
+#BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper .article-header {
+    text-align: center;
+}
+
+#BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) {
+    padding-top: 115px;
+    padding-bottom: 115px;
+}
+
+.cover-it {
+    opacity: 0;
 }

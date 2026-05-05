@@ -1,27 +1,30 @@
 
-<!-- Theme Switcher — change the class name to switch themes -->
+<!-- Theme Switcher -->
 <!-- Options: theme-corporate | theme-elegant | theme-playful | theme-soft -->
-<!-- Remove theme line entirely for the default BRIGHT theme -->
-
-<!-- Logo override — replace the URL below with the client's logo -->
-<!-- Fallback (if removed): https://w2.chabad.org/media/images/1366/fLFc13666007.png -->
-
-<!-- Video override — remove this block to use the default video -->
-<!-- Default video: /media/av/1366/YQUv13660646.mp4 -->
-<!-- Default poster: /media/images/1366/tCdY13660649.jpg -->
+<!-- Remove the theme line entirely for the default BRIGHT theme -->
 
 <script>
+  // ─── THEME ──────────────────────────────────────────────────────
   document.body.classList.add('theme-elegant'); // ← swap theme name
 
-  document.documentElement.style.setProperty(
-    '--logo-url',
-    'url(https://w2.chabad.org/media/images/1366/fLFc13666007.png)' // ← swap logo URL
-  );
+  // ─── FILE PATHS — update the right-side values only ─────────────
+  var files = {
+    "Logo.png":          "/media/images/1366/fLFc13666007.png",  // header logo
+    "InnerHero.jpg":     "/media/images/1368/AvOx13689095.jpg",  // inner page hero background
+    "VideoMobile.mp4":   "/media/av/XXXX/mobile.mp4",            // hero video (mobile)
+    "VideoDesktop.mp4":  "/media/av/XXXX/desktop.mp4",           // hero video (desktop)
+    "VideoPoster.jpg":   "/media/images/XXXX/poster.jpg",        // hero video poster image
+    "VideoFallback.mp4": "/media/av/XXXX/fallback.mp4",          // fallback looping video
+  };
+
+  // — do not edit below this line —
+  document.documentElement.style.setProperty('--logo-url',       'url(' + files["Logo.png"] + ')');
+  document.documentElement.style.setProperty('--inner-hero-url', 'url(' + files["InnerHero.jpg"] + ')');
 
   window.heroVideo = {
-    src:      "/media/av/XXXX/mobile.mp4",    // ← mobile video
-    srcLarge: "/media/av/XXXX/desktop.mp4",   // ← desktop video
-    poster:   "/media/images/XXXX/poster.jpg", // ← poster image
-    fallback: "/media/av/XXXX/fallback.mp4"   // ← looping gif fallback (mp4)
+    src:      files["VideoMobile.mp4"],
+    srcLarge: files["VideoDesktop.mp4"],
+    poster:   files["VideoPoster.jpg"],
+    fallback: files["VideoFallback.mp4"],
   };
 </script>
