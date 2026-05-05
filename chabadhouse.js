@@ -13,6 +13,17 @@ window.addEventListener("DOMContentLoaded", function () {
   var script2 = document.createElement("script");
   script2.textContent = 'if (typeof ObjectFitVideos == "function") objectFitVideos()';
 
+  var street = document.querySelector('.footer-street');
+  var cityState = document.querySelector('.footer-city-state');
+  if (street && cityState) {
+    var streetEmpty = !street.textContent.trim();
+    var cityEmpty = cityState.textContent.replace(',', '').trim() === '';
+    if (streetEmpty && cityEmpty) {
+      street.textContent = '123 Main Street';
+      cityState.textContent = 'City, State 00000';
+    }
+  }
+
   document.querySelectorAll(".big, big").forEach(function (el) {
     el.innerHTML = el.innerHTML.replace(/\|([^|]+)\|/g, '<em>$1</em>');
   });

@@ -1254,7 +1254,9 @@ text-transform: none;
 }
 
 /* photos */
-
+.photos {
+    background: transparent;
+}
 .photos h5 {
   margin-bottom: 25px !important;
     color: #f4eee2 !important;
@@ -1305,6 +1307,7 @@ text-transform: none;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    border-top: 1px solid #F4EEE233;
 }
 
 .cs-f-social-icons a {
