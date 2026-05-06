@@ -1467,6 +1467,9 @@ span.footer-title {
     .ct-h-actions .wrapper, .banner .widget_content.index_format .item, .events-shabbat, .connect-section, .latest_photos .wrapper, #footer .g960 {
         width: 97%;
     }
+    #footer .g960 {
+        align-items: center;
+    }
     .ct-h-actions .item {
         width: 50%;
     }
