@@ -1378,7 +1378,7 @@ div#content {
     opacity: 0.03;
     pointer-events: none;
 }
-#footer::after {
+.home #footer::after {
     content: '';
     position: absolute;
     inset: 0;
