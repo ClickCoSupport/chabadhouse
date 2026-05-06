@@ -30,7 +30,7 @@ div#confirm-wrapper::after, div#donate-wrapper::after {
     background-color: transparent;
 }
 
-.master-content-wrapper {
+.master-content-wrapper, #BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper {
     background-image: var(--inner-hero-url);
     background-position: center !important;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@ h1.article-header__title.js-article-title.js-page-title {
 }
 
 .co_body h1, .co_body h2 {
-    font-family: var(--heading-font-family);
+    font-family: var(--heading-font-family) !important;
 }
 
 .co_body h1 {
@@ -99,7 +99,7 @@ h1.article-header__title.js-article-title.js-page-title {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .6px;
-    color: var(--e-global-color-accent);
+    color: var(--e-global-color-accent) !important;
 }
 .co_body h4 {
     font-family: var(--heading-font-family);
