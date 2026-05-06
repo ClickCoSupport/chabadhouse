@@ -1375,6 +1375,7 @@ div#content {
     padding-top: 143px;
     background: var(--e-global-color-primary) !important;
     position: relative;
+    z-index: 0;
 }
  #footer::before {
     content: '';
