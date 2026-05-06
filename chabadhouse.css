@@ -537,7 +537,20 @@ line-height: 100%;
       font-size: 27px;
 }
 .times_wrapper.make_scrollable {
-    overflow: hidden !important;
+    overflow: visible !important;
+    height: auto !important;
+}
+
+.hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .float_left, .hp_content_wrapper [class*=widget-].candlelighting .medium_left_margin{
+    font-family: var(--paragraph-font-family), sans-serif;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .candlelighting_heading .section_heading {
+   
+    font-family: var(--heading-font-family), serif;
 }
 .candlelighting {
     background: var(--e-global-color-primary) url('https://clickcosupport.github.io/chabadhouse/CandleBackground.png') no-repeat center center / cover;
@@ -984,6 +997,22 @@ content: none !important;
 
 .candlelighting_heading .section_subheading, .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .when_to_light {
     color: #f4eee2 !important;
+}
+
+.candle-item {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+.candle-date {
+    font-weight: 700;
+    font-size: 16px;
+    color: #f4eee2;
+    margin-bottom: 3px;
+}
+.candle-time {
+    font-size: 14px;
+    color: var(--e-global-color-secondary);
 }
 
 /* main title*/

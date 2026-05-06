@@ -206,6 +206,23 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  document.querySelectorAll('.times_wrapper .medium_top_padding').forEach(function(block) {
+    var label = block.querySelector('small.when_to_light');
+    var timeSpan = block.querySelector('.bold.large');
+    var anchor = block.querySelector('a');
+    if (!label || !timeSpan || !anchor) return;
+    var anchorText = anchor.textContent;
+    var dashIdx = anchorText.indexOf('-');
+    var dateText = dashIdx !== -1 ? anchorText.slice(dashIdx + 1).trim() : '';
+    var timeText = timeSpan.textContent.trim();
+    var labelText = label.textContent.trim();
+    var href = anchor.getAttribute('href');
+    block.innerHTML = '<a href="' + href + '" class="candle-item">' +
+      '<div class="candle-date">' + dateText + '</div>' +
+      '<div class="candle-time">' + labelText + ' ' + timeText + '</div>' +
+      '</a>';
+  });
+
   var footerInner = document.querySelector('.footer_inner_container');
   if (footerInner) {
     var privacyLink = footerInner.querySelector('a.privacy-link');
