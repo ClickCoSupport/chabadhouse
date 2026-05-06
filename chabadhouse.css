@@ -452,6 +452,9 @@ body>#header>.wrapper {
     #header_branding .site-logo-wrapper {
         display: block !important;
     }
+    .on-scroll .header-wrapper {
+        height: auto;
+    }
 }
 
 .branding-search #header_branding.logo img {
