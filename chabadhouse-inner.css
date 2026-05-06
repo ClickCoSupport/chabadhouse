@@ -54,3 +54,12 @@ h1.article-header__title.js-article-title.js-page-title {
 .cover-it {
     opacity: 0;
 }
+
+.cal_header_buttons .co_toggle_buttons .item {
+    border: 2px solid var(--e-global-color-secondary);
+    color: var(--e-global-color-secondary);
+}
+.cal_header_buttons .co_toggle_buttons .item.selected {
+    border: 2px solid var(--e-global-color-secondary);
+    background: var(--e-global-color-secondary);
+}
