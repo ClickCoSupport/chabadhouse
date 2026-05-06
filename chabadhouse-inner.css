@@ -66,3 +66,24 @@ h1.article-header__title.js-article-title.js-page-title {
     border: 2px solid var(--e-global-color-secondary);
     background: var(--e-global-color-secondary);
 }
+
+.cal_header_info a {
+    color: var(--e-global-color-accent);
+    border-bottom: 1px dotted var(--e-global-color-secondary);
+}
+
+.cal_header_info .bold, .cal_header_info b {
+    color: var(--e-global-color-secondary);
+}
+
+.cal_header_info {
+    color: var(--e-global-color-primary);
+}
+
+.no-hero-image #co_ads_container, .no-hero-image #co_body_container, .no-hero-image .co_local_menu {
+    padding-top: 80px;
+}
+
+.co_body h1, .co_body h2 {
+    font-family: var(--heading-font-family);
+}
