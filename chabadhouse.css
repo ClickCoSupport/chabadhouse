@@ -1368,6 +1368,16 @@ content: none !important;
 
 
 /* footer */
+
+.footer_container br:first-of-type {
+    display: none;
+}
+.footer_container .bottom_padding {
+    padding-bottom: 0;
+}
+img.footer-logo {
+    max-width: 233px;
+}
 .footer_inner_container {
     text-align:left;
 }
@@ -1393,11 +1403,14 @@ span.footer-title {
       margin-bottom: 0 !important;
       font-size: 20px !important;
 }
+.powered img {
+    display: none;
+}
 .footer3 {
     padding-bottom: 0 !important;
     display: flex;
     gap: 5px;
-        margin-bottom: -13px;
+  
     align-items: baseline;
 }
 .footer-address {
