@@ -573,13 +573,13 @@ line-height: 100%;
 }
 
 .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .candlelighting_heading .section_heading {
-   
+       line-height: 1.2em;
     font-family: var(--heading-font-family), serif;
 }
 .candlelighting {
     background: var(--e-global-color-primary) url('https://clickcosupport.github.io/chabadhouse/CandleBackground.png') no-repeat center center / cover;
 border-radius: 13px;
-    padding: 55px 0;
+    padding: 70px 0;
 }
 
 .hp_content_wrapper [class*=widget-].candlelighting .medium_left_margin{
@@ -995,11 +995,16 @@ content: none !important;
 }
 
 /* candles */
+.candlelighting .medium_top_padding {
+    padding-top: 0;
+}
 .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .float_left a {
   
     font-size: 17px;
 }
-
+.hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .float_left {
+    line-height: 1em;
+}
 .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content, .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .candlelighting_heading {
     
     display: flex;
