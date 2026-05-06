@@ -1643,6 +1643,22 @@ span.footer-title {
     .footer_container {
         width: 100%;
     }
+    .footer_inner_container.clearfix {
+        text-align: center;
+    }
+    .footer3 {
+        justify-content: center;
+    }
+    .cs-f-social-icons {
+        margin-top: 4px;
+        width: 100%;
+    }
+    .connect .title {
+        font-size: 29px;
+    }
+    .candlelighting .vertical_padding {
+        padding-bottom: 0;
+    }
     .hp-table .hp-row-first .promo_slider .slider .slides {
         padding-top: 30%;
         padding-bottom: 84%;
