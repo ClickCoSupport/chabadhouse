@@ -195,15 +195,6 @@ window.addEventListener("DOMContentLoaded", function () {
   var footer = document.getElementById('footer');
   if (photos && footer) {
     footer.insertBefore(photos, footer.firstChild);
-  } else if (footer && !document.body.classList.contains('home')) {
-    fetch('/')
-      .then(function(r) { return r.text(); })
-      .then(function(html) {
-        var doc = new DOMParser().parseFromString(html, 'text/html');
-        var fetchedPhotos = doc.querySelector('.hp-row.photos');
-        if (fetchedPhotos) footer.insertBefore(fetchedPhotos, footer.firstChild);
-      })
-      .catch(function() {});
   }
 
   if (f.Logo) {
