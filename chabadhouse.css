@@ -736,7 +736,7 @@ content: none !important;
 
 .connect .synopsis {
     max-width: 433px;
-    padding-bottom: 140px;
+    padding-bottom: 115px;
 }
 
 
@@ -1239,7 +1239,11 @@ content: none !important;
 }
 /* connect */
 
-
+/*form overlap */
+div#content {
+    z-index: 2;
+    position: relative;
+}
 .subscribe label{
     display: none;
 }
@@ -1295,7 +1299,7 @@ content: none !important;
 .connect-wrapper {
    background: #f4eee2 !important;
    padding-bottom: 0 !important;
-    margin-bottom: -50px;
+    
         padding-top: 80px !important;
 }
 .connect-section {
@@ -1309,13 +1313,17 @@ content: none !important;
     background: #f9f6f0;
     position: relative;
     z-index: 1;
-    padding: 60px 30px;
+ padding: 70px 30px 76px 30px;
+    margin-bottom: -53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* photos */
 .photos {
         padding-bottom: 22px;
-            padding-top: 140px;
+            padding-top: 180px;
     background: transparent;
         z-index: 1;
     position: relative;
@@ -1471,6 +1479,7 @@ span.footer-title {
     .events-shabbat {
         gap: 40px;
         display: flex;
+        padding-top: 0 !important;
     }
     .events-shabbat .g320 {
         width: 51%;
@@ -1491,6 +1500,9 @@ span.footer-title {
     }
     .candlelighting {
         padding: 30px 0;
+    }
+    .testimonials {
+        padding-top: 0;
     }
     .testimonials .owl-carousel {
         display: flex !important;
