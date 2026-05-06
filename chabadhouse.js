@@ -167,7 +167,7 @@ window.addEventListener("DOMContentLoaded", function () {
   var hpSubscribe = document.querySelector(".hp_subscribe");
   if (connect && hpSubscribe) {
     var connectWrapper = document.createElement("div");
-    connectWrapper.className = "connect-wrapper";
+    connectWrapper.className = "connect-wrapper hp-row";
     var connectSection = document.createElement("div");
     connectSection.className = "connect-section";
     connect.parentNode.insertBefore(connectWrapper, connect);
@@ -193,6 +193,17 @@ window.addEventListener("DOMContentLoaded", function () {
   var footer = document.getElementById('footer');
   if (photos && footer) {
     footer.insertBefore(photos, footer.firstChild);
+  }
+
+  if (f.Logo) {
+    var footerG960 = document.querySelector('#footer .g960.footer_family_text');
+    var socialIcons = footerG960 ? footerG960.querySelector('.cs-f-social-icons') : null;
+    if (footerG960 && socialIcons) {
+      var footerLogo = document.createElement('img');
+      footerLogo.src = f.Logo;
+      footerLogo.className = 'footer-logo';
+      footerG960.insertBefore(footerLogo, socialIcons);
+    }
   }
 
   jQuery(".departments .item").on("click", function () {

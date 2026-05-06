@@ -1339,6 +1339,9 @@ content: none !important;
 
 
 /* footer */
+.footer_inner_container {
+    text-align:left;
+}
 .latest_photos .wrapper {
     padding: 0;
 }
@@ -1540,11 +1543,11 @@ span.footer-title {
     }
 }
 
-.hp-row {
+.hp-row:not(.hp-row-first) {
     opacity: 0;
 }
 
-.hp-row.animated {
+.hp-row:not(.hp-row-first).animated {
     animation: fadeInUp 0.7s ease forwards;
 }
 
