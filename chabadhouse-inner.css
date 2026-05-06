@@ -31,7 +31,7 @@ div#confirm-wrapper::after, div#donate-wrapper::after {
 }
 
 .master-content-wrapper, #BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper {
-    background-image: var(--inner-hero-url);
+    background-image: var(--inner-hero-url) !important;
     background-position: center !important;
     background-repeat: no-repeat;
     background-size: cover !important;
@@ -118,4 +118,27 @@ h1.article-header__title.js-article-title.js-page-title {
 
 .co_body .content p, .cps-container h1, .cps-container h2, .cps-container p, html body.cco_body, html body.cco_body p {
     font-size: 18px;
+}
+
+/* Footer styles for inner pages (non-homepage) */
+body:not(.home) .cs-f-social-icons {
+    text-align: center;
+}
+body:not(.home) .footer3 {
+    justify-content: center;
+}
+body:not(.home) #footer .g960 {
+    gap: 13px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+body:not(.home) span.footer-title {
+    margin-bottom: 11px !important;
+}
+body:not(.home) img.footer-logo {
+    margin-top: 11px;
+}
+body:not(.home) .footer_inner_container {
+    text-align: center;
 }
