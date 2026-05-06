@@ -87,3 +87,31 @@ h1.article-header__title.js-article-title.js-page-title {
 .co_body h1, .co_body h2 {
     font-family: var(--heading-font-family);
 }
+
+.co_body h1 {
+    font-size: 37px;
+}
+.co_body h2 {
+    font-size: 33px;
+}
+.co_body h3 {
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    color: var(--e-global-color-accent);
+}
+.co_body h4 {
+    font-family: var(--heading-font-family);
+    color: var(--e-global-color-primary);
+    font-size: 23px;
+}
+.co_body h5 {
+    color: var(--e-global-color-secondary);
+    font-size: 22px;
+}
+.co_body h6 {
+    color: var(--e-global-color-primary);
+    font-size: 19px;
+    font-family: var(--heading-font-family);
+}
