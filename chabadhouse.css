@@ -21,8 +21,6 @@ body.theme-corporate {
     --e-global-color-accent: #45A49C;
     --e-global-color-secondary: #cbad53;
     --e-global-color-889a682: #7EB1C4;
-    --heading-font-family: 'Poppins', sans-serif;
-    --paragraph-font-family: 'Figtree';
 }
 
 /* ELEGANT */
@@ -31,8 +29,6 @@ body.theme-elegant {
     --e-global-color-accent: #C8894B;
     --e-global-color-secondary: #dfd6c3;
     --e-global-color-889a682: #D0904B;
-    --heading-font-family: 'Libre Baskerville', serif;
-    --paragraph-font-family: 'Figtree';
 }
 
 /* PLAYFUL */
@@ -41,8 +37,6 @@ body.theme-playful {
     --e-global-color-accent: #FDBA07;
     --e-global-color-secondary: #5BBEED;
     --e-global-color-889a682: #F3B102;
-    --heading-font-family: 'Poppins', sans-serif;
-    --paragraph-font-family: 'Figtree';
 }
 
 /* SOFT */
@@ -51,8 +45,11 @@ body.theme-soft {
     --e-global-color-accent: #ACCA84;
     --e-global-color-secondary: #FFB79A;
     --e-global-color-889a682: #BCD49B;
-    --heading-font-family: 'Libre Baskerville', serif;
-    --paragraph-font-family: 'Figtree';
+}
+
+/* FONT: Sans Serif override (default is Libre Baskerville serif via :root) */
+body.font-sans-serif {
+    --heading-font-family: 'Poppins', sans-serif;
 }
 
 /* ============================================
@@ -540,7 +537,10 @@ line-height: 100%;
     overflow: visible !important;
     height: auto !important;
 }
-
+[class^=widget-].candlelighting a {
+    
+    color: var(--e-global-color-secondary);
+}
 .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .float_left, .hp_content_wrapper [class*=widget-].candlelighting .medium_left_margin{
     font-family: var(--paragraph-font-family), sans-serif;
     text-transform: none;

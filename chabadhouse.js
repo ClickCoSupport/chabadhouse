@@ -3,13 +3,14 @@ window.addEventListener("DOMContentLoaded", function () {
   var f = window.siteFiles || {};
 
   if (window.siteTheme) document.body.classList.add(window.siteTheme);
+  if (window.siteFont === 'sans-serif') document.body.classList.add('font-sans-serif');
   if (f.Logo)      document.documentElement.style.setProperty('--logo-url',       'url(' + f.Logo + ')');
   if (f.InnerHero) document.documentElement.style.setProperty('--inner-hero-url', 'url(' + f.InnerHero + ')');
 
-  var src      = f.VideoMobile   || "https://www1.clhosting.org/media/av/1368/XwQU13688984.mp4";
-  var srcLarge = f.VideoDesktop  || "https://www1.clhosting.org/media/av/1368/XwQU13688984.mp4";
-  var poster   = f.VideoPoster   || "/media/images/1366/tCdY13660649.jpg";
-  var fallback = f.VideoFallback || "https://www1.clhosting.org/media/av/1368/BiRt13688990.mp4";
+  var src      = f.VideoFallback;
+  var srcLarge = f.VideoDesktop;
+  var poster   = f.VideoPoster;
+  var fallback = f.VideoFallback;
 
   var autoplayingVideo = '<div id="hero"><div class="texture"></div><video loop muted autoplay playsinline webkit-playsinline src="' + src + '" poster="' + poster + '">Your browser does not support the video tag.</video></div><style>#hero::after{width:100%;height:100%;content:"";position:absolute;left:0;background:rgba(0,0,0,0.5)}#hero video{width:100%;height:100%;position:absolute;left:0;object-fit:cover;}</style>';
 
@@ -205,23 +206,6 @@ window.addEventListener("DOMContentLoaded", function () {
       footerG960.insertBefore(footerLogo, socialIcons);
     }
   }
-
-  document.querySelectorAll('.times_wrapper .medium_top_padding').forEach(function(block) {
-    var label = block.querySelector('small.when_to_light');
-    var timeSpan = block.querySelector('.bold.large');
-    var anchor = block.querySelector('a');
-    if (!label || !timeSpan || !anchor) return;
-    var anchorText = anchor.textContent;
-    var dashIdx = anchorText.indexOf('-');
-    var dateText = dashIdx !== -1 ? anchorText.slice(dashIdx + 1).trim() : '';
-    var timeText = timeSpan.textContent.trim();
-    var labelText = label.textContent.trim();
-    var href = anchor.getAttribute('href');
-    block.innerHTML = '<a href="' + href + '" class="candle-item">' +
-      '<div class="candle-date">' + dateText + '</div>' +
-      '<div class="candle-time">' + labelText + ' ' + timeText + '</div>' +
-      '</a>';
-  });
 
   var footerInner = document.querySelector('.footer_inner_container');
   if (footerInner) {
