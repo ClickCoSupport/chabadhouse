@@ -4,15 +4,18 @@
   /* Step 1 THEME: Swap the value below to any of these options: theme-bright  |  theme-corporate  |  theme-elegant  |  theme-playful  |  theme-soft */
   window.siteTheme = 'theme-bright';
 
+  /* Step 2 FONT: Choose 'serif' (Libre Baskerville, default) or 'sans-serif' (Poppins) */
+  window.siteFont = 'serif';
 
-  /* Step 2 FILE PATHS: Replace the path on the right of each line with the real file path from your media library. */
+
+  /* Step 3 FILE PATHS: Replace the path on the right of each line with the real file path from your media library. */
   window.siteFiles = {
-    Logo:          '/media/images/1366/fLFc13666007.png',   // header logo
-    InnerHero:     '/media/images/1368/AvOx13689095.jpg',   // inner-page background image
-    VideoMobile:   '/media/av/XXXX/mobile.mp4',             // homepage video (phones)
-    VideoDesktop:  '/media/av/XXXX/desktop.mp4',            // homepage video (desktop)
-    VideoPoster:   '/media/images/XXXX/poster.jpg',         // video thumbnail shown while loading
-    VideoFallback: '/media/av/XXXX/fallback.mp4',           // backup video if main one fails
+    Logo:          '/media/images/1366/fLFc13666007.png',  // site logo
+    InnerHero:     '/media/images/1368/AvOx13689095.jpg',   // inner-pages banner image
+    VideoDesktop:  '/media/av/1366/YQUv13660646.mp4',  // homepage video
+    VideoFallback: '/media/av/1368/BiRt13688990.mp4',  // gif video if full quality video fails
+    VideoPoster:   '/media/images/1366/tCdY13660649.jpg', // fallback image for video
+    
   };
 
 </script>
