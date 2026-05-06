@@ -115,3 +115,7 @@ h1.article-header__title.js-article-title.js-page-title {
     font-size: 19px;
     font-family: var(--heading-font-family);
 }
+
+.co_body .content p, .cps-container h1, .cps-container h2, .cps-container p, html body.cco_body, html body.cco_body p {
+    font-size: 18px;
+}
