@@ -525,7 +525,9 @@ a.event-details-btn {
     font-size: 14px;
     font-weight: 600;
 }
-
+a.event-details-btn:hover {
+    text-decoration: none;
+}
 .hp_content_wrapper .readMore:hover {
   background-color: transparent;
 }
@@ -1705,6 +1707,8 @@ span.footer-title {
         display: flex;
         flex-direction: column;
     }
+    .g960.footer_family_text img.footer-logo { order: 1; }
+    .g960.footer_family_text .footer_container { order: -1; }
  
     .photos {
         padding-top: 119px;
