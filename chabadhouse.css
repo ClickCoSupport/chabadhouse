@@ -1760,6 +1760,7 @@ span.footer-title {
     .cs-f-social-icons {
         margin-top: 4px;
         width: 100%;
+        justify-content: center;
     }
     .connect .title {
         font-size: 29px;
