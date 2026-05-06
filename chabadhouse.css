@@ -435,6 +435,12 @@ body>#header>.wrapper {
     height: 57px;
 }
 
+@media (max-width: 1024px) {
+    #header_branding .site-logo-wrapper {
+        display: block !important;
+    }
+}
+
 .branding-search #header_branding.logo img {
     filter: none;
     display: none;
