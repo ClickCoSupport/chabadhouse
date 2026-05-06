@@ -1736,8 +1736,8 @@ span.footer-title {
         display: flex;
         flex-direction: column;
     }
-    .g960.footer_family_text .footer_container { order: 1; }
-    .g960.footer_family_text img.footer-logo { order: 2; }
+    .g960.footer_family_text img.footer-logo { order: 1; }
+    .g960.footer_family_text .footer_container { order: 2; }
     .g960.footer_family_text .cs-f-social-icons { order: 3; }
  
     .photos {
