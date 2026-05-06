@@ -410,8 +410,8 @@ margin-top: 11px;
 border-bottom:0;
 border-top:0;
 }
-.co_menu_item.hover span.parent,
-.co_menu_item.hover span.parent a {
+.co_menu_item.hover:not(.donate_link) span.parent,
+.co_menu_item.hover:not(.donate_link) span.parent a {
     color:var(--e-global-color-secondary) !important;
     font-weight: 500 !important;
 }
@@ -1445,11 +1445,11 @@ img.footer-logo {
   text-underline-offset: 2px;
 }
 span.footer-title {
-    color: #f4eee2 !important;
+    color:var(--e-global-color-secondary) !important;
     text-transform: none !important;
     text-align: left;
       margin-bottom: 0 !important;
-      font-size: 20px !important;
+      font-size: 19px !important;
 }
 .powered img {
     display: none;
