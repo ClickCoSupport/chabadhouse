@@ -1469,6 +1469,7 @@ span.footer-title {
     }
     #footer .g960 {
         align-items: center;
+        gap: 11px;
     }
     .ct-h-actions .item {
         width: 50%;
@@ -1685,10 +1686,7 @@ span.footer-title {
         display: flex;
         flex-direction: column;
     }
-    .footer3 {
-        margin-bottom: -7px;
-        
-    }
+ 
     .photos {
         padding-top: 119px;
         padding-bottom: 13px;
