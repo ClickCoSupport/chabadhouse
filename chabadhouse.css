@@ -1630,7 +1630,7 @@ span.footer-title {
     }
     .footer3 {
         margin-bottom: -7px;
-        justify-content: center;
+        
     }
     .photos {
         padding-top: 119px;
@@ -1639,6 +1639,9 @@ span.footer-title {
     .footer_inner_container {
         max-width: 90%;
         margin: auto;
+    }
+    .footer_container {
+        width: 100%;
     }
     .hp-table .hp-row-first .promo_slider .slider .slides {
         padding-top: 30%;
