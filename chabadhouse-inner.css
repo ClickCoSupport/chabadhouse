@@ -31,19 +31,11 @@ div#confirm-wrapper::after, div#donate-wrapper::after {
 }
 
 .master-content-wrapper, #BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper {
-    background-image: var(--inner-hero-url) !important;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), var(--inner-hero-url) !important;
     background-position: center !important;
     background-repeat: no-repeat;
     background-size: cover !important;
     position: relative;
-}
-
-.master-content-wrapper::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.35);
-    pointer-events: none;
 }
 
 h1.article-header__title.js-article-title.js-page-title {
@@ -173,6 +165,12 @@ h1.article-header__title.js-article-title.js-page-title {
     }
     }
 
+@media (min-width: 767px) {
+    .footer_container, .cs-f-social-icons {
+        width: 100%;
+    }
+}
+
 #co_ads_container .container, .co_body .ads .container, .co_body .container.border {
     background:transparent;
     border-bottom: 0;
@@ -194,18 +192,25 @@ body:not(.home) .footer3 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
 }
 body:not(.home) #footer .g960 {
     gap: 13px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-        padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 61px;
+}
+.credit, .powered {
+    font-size: 14px;
+    line-height: 150%;
 }
 body:not(.home) span.footer-title {
-    margin-bottom: 13px !important;
-    font-size: 21px !important
+    margin-bottom: 0 !important;
+    font-size: 21px !important;
+    letter-spacing: 1.4px;
+    text-transform: uppercase !important;
 }
 body:not(.home) img.footer-logo {
     margin-top: 11px;
@@ -227,6 +232,9 @@ body:not(.home) .footer-address {
 }
 body:not(.home) #footer::before {
     opacity: 0.02;
+}
+.footer_inner_container, .footer_inner_container a {
+    color: #f9f6f0 !important;
 }
 body:not(.home) .footer_inner_container {
   
@@ -291,7 +299,7 @@ body:not(.home) .footer_inner_container {
 
 
 .form-header-group h2 {
-    color: var(--e-global-color-primary);
+    color: var(--e-global-color-primary) !important;
 }
 
 .form-subHeader {

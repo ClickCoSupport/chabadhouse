@@ -129,6 +129,10 @@ body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent a,
 .mobile .promo_slider .cycle-controlNav .circle {
     border-color: var(--e-global-color-primary);
 }
+body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a,
+body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent a {
+    padding: 5px 15px;
+}
 .v380 {
   height: auto;
 }
@@ -338,7 +342,9 @@ body #tabContentMain .co_menu_item span.parent a, body.cco_body #tabContentMain 
     letter-spacing: 1.4px;
 }
 
-
+.fa:before, .fas:before {
+    font-weight: 500;
+}
 /* buttons */
  .message .wrapper .widget_content .readMore, .cycle-caption a, .donate_link a, .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore, .hp_subscribe .wrapper #formContainer fieldset input[type=submit], .banner .widget_content.index_format .item .readMore, .message .wrapper .widget_content .readMore, .event-details-btn {
   padding: 12px 25px;
@@ -1422,7 +1428,9 @@ div#content {
 
 
 /* footer */
-
+.cs-f-social-icons .fa {
+    color: var(--e-global-color-secondary);
+}
 @media (min-width: 767px) {
 .footer_container, .cs-f-social-icons {
     width: 25%;
@@ -1457,9 +1465,10 @@ img.footer-logo {
 }
 span.footer-title {
     color:var(--e-global-color-accent) !important;
-    text-transform: none !important;
+      letter-spacing: 1px;
     text-align: left;
 font-weight: 500 !important;
+text-transform:none !important;
 }
 .powered img {
     display: none;
@@ -1474,6 +1483,7 @@ font-weight: 500 !important;
 .footer-address {
  display:none;
     text-align: left;
+    font-weight: 400;
 }
 #footer {
     background: var(--e-global-color-primary);
@@ -1500,6 +1510,7 @@ font-weight: 500 !important;
    color: #fff;
     height: 41px;
     width: 41px;
+    padding-top: 10px;
        margin: 2px;
     border: 1px solid var(--e-global-color-secondary);
 }
@@ -1515,7 +1526,9 @@ font-weight: 500 !important;
    font-family:var(--paragraph-font-family);
 }
 
-
+.page-tools-sidebar {
+    display: none;
+}
 /* ============================================
    TABLET / LAPTOP — 1100px and below
    ============================================ */
