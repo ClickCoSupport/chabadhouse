@@ -355,6 +355,15 @@ background: var( --e-global-color-accent ) !important;
 border: 1px solid var( --e-global-color-accent ) !important;
 font-family: var(--paragraph-font-family), sans-serif;
 font-size: 17px !important;
+font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hp_subscribe .wrapper #formContainer fieldset input[type=submit] {
+   
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 13px;
 }
 .message .wrapper .widget_content .readMore:hover,
 .cycle-caption a:hover,
@@ -408,6 +417,8 @@ margin-top: 11px;
 }
 
 /* nav */
+
+
 body.cco_body #tabContentMain .co_menu_item.selected a.parent:after  {
     color: var(--e-global-color-secondary);
 }
@@ -428,8 +439,18 @@ border-top:0;
 .co_menu_item.hover:not(.donate_link) span.parent,
 .co_menu_item.hover:not(.donate_link) span.parent a {
     color:var(--e-global-color-secondary) !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     letter-spacing: 1.4px !important;
+}
+body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container, #header_container .links #HeaderSubscribeContainer, #header.on-scroll #header_container .links, body.sites-article #header_container .links, .site-nav-wrapper, .cal_header_buttons .co_toggle_buttons .item, .cal_header_buttons .co_toggle_buttons .item.selected {
+    border-color: transparent;
+}
+body.cco_body #tabContentMain .co_menu_item.selected a.parent:after, #tabContentMain .co_menu_item.multi_level:before, .co_global_button .button, .co_global_submit .button, .ribbon-wrapper .ribbon, #lightbox-wrapper #lightbox #details-panel, body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container, #CalendarContentContainer .year_view .month .month_header, .cs-f-social-icons a:hover, .mobile .menu .menu_button #MenuIcon span {
+    background-color: transparent;
+}
+.co_menu_item .co_menu_content {
+	background-color: #F9F6F0;
+border-radius: 10px;
 }
 #header_container .links {
         display: none;
@@ -1017,6 +1038,13 @@ content: none !important;
 }
 
 /* candles */
+
+.hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .bold.large {
+  
+    font-size: 17px;
+   
+    font-weight: 500;
+}
 .candlelighting .medium_top_padding {
     padding-top: 0;
 }
@@ -1465,9 +1493,9 @@ img.footer-logo {
 }
 span.footer-title {
     color:var(--e-global-color-accent) !important;
-      letter-spacing: 1px;
+      letter-spacing: .1px;
     text-align: left;
-font-weight: 500 !important;
+font-weight: 600 !important;
 text-transform:none !important;
 }
 .powered img {
@@ -1806,7 +1834,8 @@ text-transform:none !important;
     .chabad_updates .widget_header.widget_header h5,
     [class*=widget-] .widget_header.widget_header h5,
     .connect .title {
-        font-size: 33px;
+        font-size: 28px;
+        text-align: center;
     }
     .hp-table .hp-row-first .promo_slider .slider .cycle-caption big {
         padding-top: 40px;
@@ -1864,5 +1893,15 @@ text-transform:none !important;
     .event-content-wrap {
         flex-direction: column;
         gap: 8px;
+    }
+    .banner .widget_content.index_format .item .subtitle {
+        text-align: center;
+    }
+    .banner .widget_content.index_format .item .subtitle, .connect .synopsis {
+        font-size: 18px;
+        text-align: center;
+    }
+    body.home img.footer-logo {
+        display: none;
     }
 }
