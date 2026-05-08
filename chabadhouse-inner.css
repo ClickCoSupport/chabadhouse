@@ -168,6 +168,9 @@ h1.article-header__title.js-article-title.js-page-title {
     .no-hero-image #co_ads_container, .no-hero-image #co_body_container, .no-hero-image .co_local_menu {
         padding-top: 30px;
     }
+    .footer_container, .cs-f-social-icons {
+        width: 100%;
+    }
     }
 
 #co_ads_container .container, .co_body .ads .container, .co_body .container.border {
@@ -189,6 +192,8 @@ body:not(.home) .cs-f-social-icons {
 }
 body:not(.home) .footer3 {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 body:not(.home) #footer .g960 {
     gap: 13px;
@@ -216,6 +221,9 @@ body:not(.home) .cs-f-social-icons {
 
 body:not(.home) .footer-address {
     display: block !important;
+}
+.footer-address {
+    font-size: 17px;
 }
 body:not(.home) #footer::before {
     opacity: 0.02;
