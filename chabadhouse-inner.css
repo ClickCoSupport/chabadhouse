@@ -90,15 +90,22 @@ h1.article-header__title.js-article-title.js-page-title {
 
 .co_body h1 {
     font-size: 37px;
+    margin-bottom: 11px;
+   
 }
 .co_body h2 {
     font-size: 33px;
+        margin-top: 37px;
+
+     
 }
+
+ 
 .co_body h3 {
-    font-size: 26px;
+    
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: .6px;
+    letter-spacing: .7px;
     color: var(--e-global-color-accent) !important;
 }
 .co_body h4 {
@@ -120,6 +127,34 @@ h1.article-header__title.js-article-title.js-page-title {
     font-size: 18px;
 }
 
+/* mobile font settings */
+
+  @media (max-width: 767px) {
+
+    .co_body h1 {
+    font-size: 29px;
+    line-height: 107%;
+   
+}
+    .co_body h2 {
+               font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        }
+    }
+
+#co_ads_container .container, .co_body .ads .container, .co_body .container.border {
+    background:transparent;
+}
+
+.secondary_navigation .header div {
+        font-size: 18px;
+}
+.co_local_menu .item a {
+  
+    font-size: 16px;
+    font-weight: 400;
+}
 /* Footer styles for inner pages (non-homepage) */
 body:not(.home) .cs-f-social-icons {
     text-align: center;
@@ -132,13 +167,248 @@ body:not(.home) #footer .g960 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+        padding-top: 80px;
+    padding-bottom: 80px;
 }
 body:not(.home) span.footer-title {
-    margin-bottom: 11px !important;
+    margin-bottom: 13px !important;
+    font-size: 21px !important
 }
 body:not(.home) img.footer-logo {
     margin-top: 11px;
+    display: none;
 }
 body:not(.home) .footer_inner_container {
     text-align: center;
 }
+body:not(.home) .cs-f-social-icons {
+    
+    justify-content: center;
+}
+
+body:not(.home) .footer-address {
+    display: block !important;
+}
+body:not(.home) #footer::before {
+    opacity: 0.02;
+}
+body:not(.home) .footer_inner_container {
+  
+    font-size: 16px;
+        line-height: 156%;
+}
+
+
+/* Forms */
+
+.form-checkbox-item input,
+.form-radio-item input {
+    margin-bottom: 7px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.form-checkbox-item label,
+.form-radio-item label {
+    cursor: pointer;
+    position: relative;
+    top: -3px;
+    font-size: 16px;
+}
+
+.form-checkbox-item label:before,
+.form-radio-item label:before {
+    content: " ";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--e-global-color-secondary);
+    position: absolute;
+    left: -20px;
+    top: 1px;
+}
+
+/* Checkbox style */
+.form-checkbox-item label:before {
+    border-radius: 0;
+}
+
+.form-checkbox-item input:checked ~ label:before {
+    background: var(--e-global-color-secondary);
+    border-radius: 2px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-image: url(/media/images/1272/kPuZ12724451.png);
+}
+
+/* Radio style */
+.form-radio-item label:before {
+    border-radius: 50%;
+}
+
+.form-radio-item input:checked ~ label:before {
+    background: var(--e-global-color-secondary);
+    border-radius: 50%;
+    background-image: none;
+}
+
+
+.form-subHeader {
+    color: var(--e-global-color-secondary);
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    font-weight: 500;
+}
+/*form fields */
+
+.form-captcha INPUT, .form-checkbox-other-input, .form-radio-other-input, .form-textarea, .form-textbox {
+ 
+    background: #FFFEFD;
+    border: 1px solid #f4eee2;
+    border-radius: 7px;
+    box-shadow: none;
+    min-height: 34px;
+}
+
+  /* ------site wide payment selection forms */
+
+td.form-payment-methods.form-multiple-column {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3px;
+ align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+max-width: 430px !important;
+padding-bottom: 0;
+}
+
+
+
+
+ td.form-payment-methods.form-multiple-column input {
+    display: none;
+}
+
+td.form-payment-methods.form-multiple-column .form-radio-item {
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+height: 47px;
+    align-items: center;
+border: 1px solid black !important;
+width: 100%;
+}
+
+td.form-payment-methods.form-multiple-column span.form-radio-item:has(input:checked) {
+    background: #252525;
+    color: #fff !important;
+    border-color: #252525 !important;
+}
+td.form-payment-methods.form-multiple-column 
+  span.form-radio-item:has(.paymentMethod[value="paypal"]:checked) {
+    background: #F7BF38;
+    color: #fff !important;
+    border-color: #F7BF38 !important;
+}
+
+.form-radio-item:has(.paymentMethod[value="paypal"]) label {
+    font-size: 0 !important;
+}
+.form-radio-item:has(.paymentMethod[value="paypal"]) label:after {
+        content: "";
+    background-image: url(https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png);
+    height: 22px;
+    width: 94px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-radio-item:has(.paymentMethod[value="creditCard"]) label:before {
+    content: "";
+    background-image: url(https://jewishcenter.info/media/images/1319/fWPC13199231.png);
+    height: 15px;
+    width: 36px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 0;
+}
+td.form-payment-methods.form-multiple-column span.form-radio-item:has(.paymentMethod[value="creditCard"]:checked) label:before {
+       background-image: url(https://jewishcenter.info/media/images/1319/ftSr13199286.png);
+}
+.form-line:has(.form-payment-methods) .form-label-left {
+    display: none;
+}
+
+td.form-payment-methods.form-multiple-column .form-radio-item label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+width: 100% !important;
+       padding: 8px 5px 10px 5px;
+    align-items: center;
+display: flex;
+    justify-content: center;
+}
+div#total_amount {
+    color: black;
+    font-size: 22px;
+    max-width: fit-content;
+}
+
+.form-line:has(#total_amount) {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 430px;
+    align-items: flex-end;
+    margin-bottom: -1px;
+}
+.form-input:has(#total_amount) {
+    max-width: fit-content;
+    margin-right: 4px;
+    display: table-cell;
+}
+
+.form-line:has(#total_amount) .form-label-left {
+    line-height: 127%;
+    margin-bottom: 0;
+    padding: 0;
+    width: 100% !important;
+}
+.form-line:has(#total_amount) .form-label-left label {
+    display: flex;
+    align-items: center;
+column-gap: 6px;
+        justify-content: space-between;
+line-height: 151%;
+margin-bottom: 0;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: .5px;
+}
+
+.form-line:has(#total_amount) label:after {
+        flex: 1;
+        background: #acacac;
+    height: 1px;
+    content: "";
+    position: relative;
+    display: inline-block;
+    }
+
+    :not(td)>.form-sub-label-container {
+        margin-bottom: 7px;
+    }  
