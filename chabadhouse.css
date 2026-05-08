@@ -436,11 +436,15 @@ body.cco_body #tabContentMain .co_menu_item.selected a.parent:after {
 border-bottom:0;
 border-top:0;
 }
-.co_menu_item.hover:not(.donate_link) span.parent,
-.co_menu_item.hover:not(.donate_link) span.parent a {
-    color:var(--e-global-color-secondary) !important;
+.co_menu_item.hover span.parent,
+.co_menu_item.hover span.parent a {
     font-weight: 600 !important;
     letter-spacing: 1.4px !important;
+    font-family: var(--paragraph-font-family) !important;
+}
+.co_menu_item.hover:not(.donate_link) span.parent,
+.co_menu_item.hover:not(.donate_link) span.parent a {
+    color: var(--e-global-color-secondary) !important;
 }
 body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container, #header_container .links #HeaderSubscribeContainer, #header.on-scroll #header_container .links, body.sites-article #header_container .links, .site-nav-wrapper, .cal_header_buttons .co_toggle_buttons .item, .cal_header_buttons .co_toggle_buttons .item.selected {
     border-color: transparent;
