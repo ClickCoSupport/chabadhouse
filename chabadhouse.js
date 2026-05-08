@@ -6,6 +6,13 @@ window.addEventListener("DOMContentLoaded", function () {
   if (window.siteFont === 'sans-serif') document.body.classList.add('font-sans-serif');
   if (f.Logo)      document.documentElement.style.setProperty('--logo-url',       'url(' + f.Logo + ')');
   if (f.InnerHero) document.documentElement.style.setProperty('--inner-hero-url', 'url(' + f.InnerHero + ')');
+  if (f.Favicon) {
+    var favicon = document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/png';
+    favicon.href = f.Favicon;
+    document.head.appendChild(favicon);
+  }
 
   var src      = f.VideoFallback;
   var srcLarge = f.VideoDesktop;

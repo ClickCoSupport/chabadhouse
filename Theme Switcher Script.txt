@@ -15,7 +15,8 @@
     VideoDesktop:  '/media/av/1366/YQUv13660646.mp4',  // homepage video
     VideoFallback: '/media/av/1368/BiRt13688990.mp4',  // gif video if full quality video fails
     VideoPoster:   '/media/images/1366/tCdY13660649.jpg', // fallback image for video
-    
+    Favicon:       '/media/images/1369/hQbY13696854.png',  // favicon
+
   };
 
 </script>
