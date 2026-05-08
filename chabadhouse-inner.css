@@ -35,6 +35,15 @@ div#confirm-wrapper::after, div#donate-wrapper::after {
     background-position: center !important;
     background-repeat: no-repeat;
     background-size: cover !important;
+    position: relative;
+}
+
+.master-content-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    pointer-events: none;
 }
 
 h1.article-header__title.js-article-title.js-page-title {
@@ -134,17 +143,36 @@ h1.article-header__title.js-article-title.js-page-title {
     .co_body h1 {
     font-size: 29px;
     line-height: 107%;
-   
+
 }
     .co_body h2 {
                font-size: 30px;
         margin-top: 30px;
         margin-bottom: 5px;
         }
+
+    #BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) {
+        padding-top: 87px;
+        padding-bottom: 64px;
+    }
+    body:not(.home) #footer .g960 {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    #co_ads_container, .co_local_menu {
+        border-top: 0;
+    }
+    #BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) .article-header .article-header__title {
+        font-size: 35px;
+    }
+    .no-hero-image #co_ads_container, .no-hero-image #co_body_container, .no-hero-image .co_local_menu {
+        padding-top: 30px;
+    }
     }
 
 #co_ads_container .container, .co_body .ads .container, .co_body .container.border {
     background:transparent;
+    border-bottom: 0;
 }
 
 .secondary_navigation .header div {
@@ -234,7 +262,7 @@ body:not(.home) .footer_inner_container {
 }
 
 .form-checkbox-item input:checked ~ label:before {
-    background: var(--e-global-color-secondary);
+    background-color: var(--e-global-color-secondary);
     border-radius: 2px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -253,6 +281,10 @@ body:not(.home) .footer_inner_container {
     background-image: none;
 }
 
+
+.form-header-group h2 {
+    color: var(--e-global-color-primary);
+}
 
 .form-subHeader {
     color: var(--e-global-color-secondary);

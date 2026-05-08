@@ -208,6 +208,17 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  var footerStreet = document.querySelector('.footer-address .footer-street');
+  var footerCityState = document.querySelector('.footer-address .footer-city-state');
+  if (footerStreet && footerCityState) {
+    var streetBlank = !footerStreet.textContent.trim();
+    var cityBlank = !footerCityState.textContent.replace(/[,\s]/g, '');
+    if (streetBlank && cityBlank) {
+      footerStreet.textContent = '123 Main Street';
+      footerCityState.textContent = 'Anytown, NY 10001';
+    }
+  }
+
   var footerInner = document.querySelector('.footer_inner_container');
   if (footerInner) {
     var privacyLink = footerInner.querySelector('a.privacy-link');
