@@ -439,6 +439,10 @@ border-top:0;
 body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container a.item {
     background: transparent;
 }
+#tabContentMain .co_menu_item.multi_level:before {
+    background: #f9f6f0;
+    border-bottom: 0;
+}
 .co_menu_item.hover span.parent,
 .co_menu_item.hover span.parent a {
     font-weight: 600 !important;
