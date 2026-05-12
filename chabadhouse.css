@@ -390,6 +390,8 @@ font-size: 87px;
     .hp-table .hp-row-first .promo_slider .slider .cycle-caption big {
         font-size: 55px;
     }
+
+    
 }
 /* mobile */
 @media (max-width: 767px) {
@@ -504,6 +506,11 @@ body>#header>.wrapper {
         font-size: 15px;
         max-width: 80%;
     }
+
+          .branding-search #header_branding .site_title {
+        max-width: 80%;
+    }
+
 }
 
 .branding-search #header_branding.logo img {
