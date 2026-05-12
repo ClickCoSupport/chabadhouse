@@ -1182,6 +1182,16 @@ content: none !important;
     margin: 0 20px;
   }
 }
+@media (max-width: 1250px) {
+    .hp-table .hp-row-first .promo_slider .slider .slides {
+        padding-top: 70%;
+    }
+}
+@media (min-width: 1250px) {
+    .hp-table .hp-row-first .promo_slider .slider .slides {
+        padding-top: 45%;
+    }
+}
 .testimonials .owl-carousel .owl-item { display: table; }
 .testimonials .owl-carousel .item {
   overflow: hidden;
@@ -1582,6 +1592,9 @@ text-transform:none !important;
     .about-content,
     .banner .widget_content.index_format .item .subtitle {
         align-items: center;
+    }
+    .banner .widget_content.index_format .item .subtitle {
+        text-align: center;
     }
     .about-content {
         width: 100%;
