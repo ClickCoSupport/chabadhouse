@@ -699,7 +699,7 @@ border-radius: 13px;
     padding: 0;
 }
 .events-shabbat {
-   
+       padding-bottom: 73px !important;
    justify-content: space-between;
 }
 .events-shabbat .clear {
