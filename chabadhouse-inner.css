@@ -267,6 +267,14 @@ body:not(.home) .footer_inner_container {
     letter-spacing: .5px;
 }
 
+#confirm-wrapper #confirm, #donate-wrapper #donate {
+    border-radius: 6px;
+}
+
+#donate-wrapper main form .content-box .row .col .field-wrapper.checkbox-wrapper label {
+    font-size: 14px;
+}
+
 #donate-wrapper main h1 {
     max-width: 580px;
     margin: auto;
