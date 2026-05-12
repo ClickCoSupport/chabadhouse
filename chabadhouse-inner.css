@@ -269,14 +269,20 @@ body:not(.home) .footer_inner_container {
 
 #confirm-wrapper #confirm, #donate-wrapper #donate {
     border-radius: 6px;
+    background-color: #f9f6f0;
 }
 
 #donate-wrapper main form .content-box .row .col .field-wrapper.checkbox-wrapper label {
     font-size: 14px;
 }
-
+.donate-content {
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 #donate-wrapper main h1 {
     max-width: 580px;
+    font-size: 30px;
     margin: auto;
 }
 
@@ -290,19 +296,31 @@ body:not(.home) .footer_inner_container {
 
 #donate-wrapper main .amounts {
     flex-wrap: wrap;
-    column-gap: 7px;
+    gap: 7px;
+        justify-content: center;
 }
 
 #donate-wrapper main .amounts button {
     font-family: var(--paragraph-font-family), sans-serif;
-    background-color: var(--e-global-color-accent);
-    color: #fff;
+  
     width: 28%;
-    font-size: 17px;
+  margin: 0;
     font-weight: 600;
-    border-radius: 9px;
+  
+    background: transparent;
+    color: var(--e-global-color-accent);
+    border: 1px solid color-mix(in srgb, var(--e-global-color-accent) 40%, transparent);
 }
+#donate-wrapper main .amounts button:hover {
+    box-shadow: 0 0 40px 40px var(--e-global-color-accent) inset;
 
+}
+#donate-wrapper button.donate-button:hover {
+  
+    color: var(--e-global-color-accent);
+    border: 2px solid var(--e-global-color-accent);
+   
+}
 .form-checkbox-item input,
 .form-radio-item input {
     margin-bottom: 7px;
