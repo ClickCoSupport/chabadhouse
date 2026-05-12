@@ -1646,6 +1646,7 @@ text-transform:none !important;
 @media (max-width: 850px) {
     .events-shabbat {
         flex-direction: column;
+           gap: 90px;
     }
     .connect-section {
         flex-direction: column;
@@ -1668,6 +1669,8 @@ text-transform:none !important;
     .candlelighting {
         max-width: 390px;
     }
+
+       
 }
 
 
@@ -1793,6 +1796,22 @@ text-transform:none !important;
         padding-right: 2px;
         padding-left: 2px;
     }
+
+    .testimonials {
+        padding-top: 0;
+    }
+    .hp_content_wrapper [class*=widget-].upcoming_events .readMore {
+        text-align: center;
+    }
+    .upcoming_events h5 {
+        text-align: center !important;
+    }
+    .upcoming_events .wrapper {
+        margin-top: 24px;
+    }
+    .ct-h-actions {
+        padding-top: 0;
+    }
     .g960.footer_family_text {
         display: flex;
         flex-direction: column;
@@ -1879,7 +1898,7 @@ text-transform:none !important;
         border-bottom: 1px solid #f4eee2;
         width: 100%;
         height: 31px;
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
     .upcoming_events h6 a {
         font-size: 19px;
