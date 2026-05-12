@@ -211,7 +211,7 @@ body.sites-article #header_container .links .search-trigger-container .search-tr
 .hp_content_wrapper .latest_photos .readMore span,
 .latest_photos .readMore span,
 [class^=widget-].parsha .readMore,
-.mobile .promo_slider .slide_wrapper .caption, .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .float_left a {
+.mobile .promo_slider .slide_wrapper .caption, .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .float_left a, .co_menu_item.multi_level .co_submenu_container a.item.hover span, .co_menu_item.multi_level .co_submenu_container a.item:hover span {
     color: var(--e-global-color-secondary);
 }
 
@@ -435,6 +435,9 @@ body.cco_body #tabContentMain .co_menu_item.selected a.parent:after {
 .co_menu_item.multi_level .co_submenu_container a.item {
 border-bottom:0;
 border-top:0;
+}
+body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container a.item {
+    background: transparent;
 }
 .co_menu_item.hover span.parent,
 .co_menu_item.hover span.parent a {
