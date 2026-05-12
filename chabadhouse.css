@@ -565,6 +565,16 @@ div#header_branding .site_title {
     .header-wrapper {
         height: fit-content;
     }
+    .site-nav-wrapper {
+        background: var(--e-global-color-primary);
+    }
+    .site-nav-wrapper .co_menu_item .co_menu_content {
+        background: transparent;
+    }
+
+    .site-nav-wrapper .co_menu_item .co_menu_content a.item span{
+color: #f9f6f0 !important;
+    }
 }
 
 /* homepage */
