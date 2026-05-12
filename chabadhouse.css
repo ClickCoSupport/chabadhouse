@@ -1189,7 +1189,7 @@ content: none !important;
 }
 @media (min-width: 1250px) {
     .hp-table .hp-row-first .promo_slider .slider .slides {
-        padding-top: 45%;
+        padding-top: 50%;
     }
 }
 .testimonials .owl-carousel .owl-item { display: table; }
