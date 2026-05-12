@@ -408,9 +408,7 @@ font-size: 87px;
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption {
        top: 53%;
 }
-.hp-table .hp-row-first .promo_slider .slider .slides {
-       padding-top: 50%;
-}
+
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore {
     font-size: 18px;
 margin-top: 11px;
@@ -1765,7 +1763,7 @@ text-transform:none !important;
     .latest_photos .widget_content>ul li,
     .latest_photos .widget_content>ul li:first-child {
         height: 131px;
-        width: 30.3%;
+        width: 30%;
     }
     .latest_photos .widget_content>ul {
         flex-wrap: wrap;
@@ -1849,8 +1847,8 @@ text-transform:none !important;
         padding-bottom: 0;
     }
     .hp-table .hp-row-first .promo_slider .slider .slides {
-        padding-top: 30%;
-        padding-bottom: 84%;
+        padding-top: 48%;
+        padding-bottom: 92%;
     }
     .banner .widget_content.index_format .item .title,
     .banner .widget_content.index_format .item .title a,
