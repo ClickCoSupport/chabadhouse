@@ -1552,6 +1552,11 @@ span.footer-title {
 font-weight: 600 !important;
 text-transform:none !important;
 }
+@media (min-width: 768px) {
+    #footer .footer_text .footer3 .footer-title, #footer .footer_text .footer3 b .footer-title {
+        margin-bottom: 0;
+    }
+}
 .powered img {
     display: none;
 }
