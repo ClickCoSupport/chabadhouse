@@ -1518,7 +1518,7 @@ div#content {
     color: var(--e-global-color-secondary);
 }
 @media (min-width: 767px) {
-.footer_container, .cs-f-social-icons {
+.home .footer_container, .home .cs-f-social-icons {
     width: 25%;
 }
 }
