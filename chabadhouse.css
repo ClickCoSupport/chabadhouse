@@ -1982,3 +1982,16 @@ text-transform:none !important;
         display: none;
     }
 }
+
+.no-hero-image #co_ads_container, .no-hero-image #co_body_container, .no-hero-image .co_local_menu {
+    padding: 22px;
+    padding-top: 80px;
+}
+
+@media (max-width: 767px) {
+    .no-hero-image #co_ads_container, .no-hero-image #co_body_container, .no-hero-image .co_local_menu {
+       
+        padding: 14px;
+        padding-top: 30px;
+    }
+}
