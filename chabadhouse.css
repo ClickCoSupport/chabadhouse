@@ -466,7 +466,7 @@ border-radius: 10px;
 }
 #tabContentMain .co_menu_item.arrow .co_submenu_container a.item, #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body.cco_body #tabContentMain .co_submenu_container .co_column a {
     font-size: 16px !important;
-    font-weight: 600 !important;
+    font-weight: 600;
 }
 .header_container {
                height: 0;
@@ -575,8 +575,22 @@ div#header_branding .site_title {
     .site-nav-wrapper .co_menu_item .co_menu_content a.item span{
 color: #f9f6f0 !important;
     }
+.site-nav-wrapper .co_submenu_container a.item span {
+    font-weight: 400 !important;
+}
+td.co_menu_item.donate_link {
+    margin-top: 20px;
 }
 
+    .cs-menu-item-toggle {
+     
+        padding: 9px 29px;
+    }
+}
+
+.mobile-menu-bottom-links a {
+    font-size: 14px;
+}
 /* homepage */
 
 .hp_content_wrapper .g320:nth-child(2):after, .hp_content_wrapper .g320:nth-child(2):before{
