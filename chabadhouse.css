@@ -1242,6 +1242,7 @@ content: none !important;
   .testimonials .owl-carousel .item {
     max-width: 600px;
     margin: 0 auto;
+    padding-bottom:0;
   }
 }
 .testimonials .owl-carousel .item .text-container {
@@ -1695,7 +1696,7 @@ text-transform:none !important;
 @media (max-width: 850px) {
     .events-shabbat {
         flex-direction: column;
-           gap: 90px;
+           gap: 80px;
            padding-bottom: 33px !important;
     }
     .connect-section {
@@ -1795,8 +1796,8 @@ text-transform:none !important;
         text-align: left !important;
     }
     .banner-updates img {
-        width: 100%;
-        height: 223px;
+        width: 90%;
+        height: 205px;
     }
     .upcoming_events h6 a {
         font-size: 20px;
@@ -1827,7 +1828,7 @@ text-transform:none !important;
     .hp-row.hp_subscribe {
         padding: 42px 30px;
         position: relative;
-        z-index: 5;
+       margin-bottom: 0;
     }
     .testimonials .synopsis:before {
         top: -10px;
@@ -1864,6 +1865,16 @@ text-transform:none !important;
     .ct-h-actions {
         padding-top: 0;
     }
+    .connect {
+        padding-top: 45px;
+    }
+    .connect-section {
+        padding-bottom: 73px;
+        gap: 18px;
+    }
+    #footer .g960 {
+        padding-top: 21px;
+    }
     .credit {
         display: flex;
         justify-content: center;
@@ -1878,7 +1889,7 @@ text-transform:none !important;
     .g960.footer_family_text .cs-f-social-icons { order: 3; }
  
     .photos {
-        padding-top: 119px;
+        padding-top:65px;
         padding-bottom: 13px;
     }
     .footer_inner_container {
